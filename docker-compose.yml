@@ -1,0 +1,14 @@
+services:
+  nextjs-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        NEXT_PUBLIC_BASE_ROUTE: "home"
+        NEXT_PUBLIC_BASE_PATH: ""
+        NEXT_PUBLIC_API_URL: ""
+        NEXT_PUBLIC_BASE_URL: ""
+        NEXT_PUBLIC_BASE_PORT: ""
+        NEXT_PUBLIC_AUTHORIZATION: ""
+    ports:
+      - "3000:3000"

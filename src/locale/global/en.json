@@ -1,0 +1,20 @@
+{
+  "--> loaderPage <--": "**=============== loaderPage ============**",
+  "loading": "Loading",
+
+  "--> header <--": "**=============== header ============**",
+  "home": "Home",
+  "about_us": "About Us",
+  "contact_us": "Contact Us",
+  "features": "Features",
+  "prices": "Prices",
+  "support": "Support",
+  "news": "News",
+  "login_telegram": "Launch Telegram Bot",
+
+  "--> charts <--": "**=============== charts ============**",
+  "max": "Max",
+
+  "--> system message <--": "**=============== system message ============**",
+  "error": "Unfortunately, an error occurred :("
+}

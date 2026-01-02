@@ -1,0 +1,23 @@
+{
+  "loaderPage": "",
+
+  "loading": "جاري التحميل",
+
+  "header": "",
+
+  "home": "الرئيسية",
+  "about_us": "من نحن",
+  "contact_us": "اتصل بنا",
+  "features": "المميزات",
+  "prices": "الأسعار",
+  "support": "الدعم",
+  "news": "الأخبار",
+  "login_telegram": "تشغيل بوت تليجرام",
+
+  "charts": "",
+
+  "max": "الأقصى",
+
+  "--> system message <--": "**=============== system message ============**",
+  "error": "للأسف، حدث خطأ :("
+}

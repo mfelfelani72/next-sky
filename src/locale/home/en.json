@@ -1,0 +1,11 @@
+{
+  "aimoonhub": "AimoonHub",
+  "welcome_title": "Breaking News Analysis <0>{{financial_markets}}</0> and <1>{{cryptocurrencies}}</1>",
+  "financial_markets": "Financial Markets",
+  "cryptocurrencies": "Cryptocurrencies",
+  "welcome_description": "Using artificial intelligence, AimoonHub analyzes news and market data in real time and provides you with accurate information for better decision-making",
+  "login_dashboard": "Login to dashboard",
+  "go_to_news": "Go to News",
+  "welcome_title_2": "Smart crypto news analysis tool!",
+  "welcome_description_2": "With superhuman accuracy, check out the latest news and developments in the world of cryptocurrencies. Real-time data, detailed analysis, and deep insight to make better decisions in the financial markets!"
+}

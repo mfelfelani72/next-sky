@@ -1,0 +1,12 @@
+User-agent: *
+Disallow: /
+
+# Test/Staging Environment
+User-agent: Googlebot
+Disallow: /
+
+User-agent: Bingbot
+Disallow: /
+
+User-agent: Yandex
+Disallow: /

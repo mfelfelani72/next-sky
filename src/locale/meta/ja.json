@@ -1,0 +1,30 @@
+{
+  "title": "AimoonHub",
+  "description": "「AimoonHubはAIによる暗号資産トレードシグナル、リアルタイムニュース、ライブ価格、スマート市場分析を提供し、初心者でも自信を持って取引できるよう支援します。」",
+  "keywords": [
+    "AimoonHub",
+    "AIトレードシグナル",
+    "暗号資産シグナル",
+    "リアルタイム仮想通貨ニュース",
+    "ライブ価格",
+    "初心者向けトレード",
+    "デジタル資産分析",
+    "市場分析",
+    "価格予測",
+    "ニュース感情分析",
+    "暗号AIツール"
+  ],
+  "publisher": "AimoonHub",
+  "openGraph": {
+    "title": "AimoonHub – AIによる暗号資産トレードシグナル",
+    "description": "AimoonHubはAIトレードシグナル、リアルタイム仮想通貨ニュース、ライブ価格、スマート市場分析を提供し、自信のある取引をサポートします。",
+    "images": "/next-aimoonhub/images/png/opengraph.png"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "AimoonHub – AIによる暗号資産トレードシグナル",
+    "description": "AimoonHubはAIトレードシグナル、リアルタイムニュース、ライブ価格、スマート市場分析を提供し、安心した取引をサポートします。",
+    "images": "/next-aimoonhub/images/png/opengraph.png",
+    "site": ""
+  }
+}
