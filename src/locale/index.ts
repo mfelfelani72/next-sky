@@ -8,10 +8,8 @@
 import { cache } from "react";
 import en from "./en";
 import fa from "./fa";
-import ar from "./ar";
-import ja from "./ja";
 
-const dictionaries = { en, fa, ar, ja };
+const dictionaries = { en, fa };
 
 export type Lang = keyof typeof dictionaries;
 

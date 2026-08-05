@@ -1,9 +1,9 @@
 {
-  "aimoonhub": "AimoonHub",
+  "sky": "sky",
   "welcome_title": "Breaking News Analysis <0>{{financial_markets}}</0> and <1>{{cryptocurrencies}}</1>",
   "financial_markets": "Financial Markets",
   "cryptocurrencies": "Cryptocurrencies",
-  "welcome_description": "Using artificial intelligence, AimoonHub analyzes news and market data in real time and provides you with accurate information for better decision-making",
+  "welcome_description": "Using artificial intelligence, sky analyzes news and market data in real time and provides you with accurate information for better decision-making",
   "login_dashboard": "Login to dashboard",
   "go_to_news": "Go to News",
   "welcome_title_2": "Smart crypto news analysis tool!",

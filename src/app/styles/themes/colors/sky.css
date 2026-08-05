@@ -1,0 +1,82 @@
+@layer theme {
+  [data-theme="sky"] {
+    /* Fonts */
+    --font-spaceGrotesk: spaceGrotesk;
+    --font-satoshi: satoshi;
+    --font-iranSans: iranSans;
+
+    /* Colors */
+
+    --color-theme: rgba(31, 30, 46, 1);
+    --color-background: rgba(31, 30, 46, 1);
+    --color-background-light: rgba(40, 38, 58, 1);
+
+    --color-theme: rgba(31, 30, 46, 1);
+    --color-background: rgba(31, 30, 46, 1);
+    --color-background-light: rgba(40, 38, 58, 1);
+
+    /* warning */
+    --color-Warning-600: rgba(215, 187, 30, 1);
+    --color-Warning-500: rgba(215, 187, 30, 1);
+    --color-Warning-400: rgba(229, 205, 67, 1);
+    --color-Warning-300: rgba(234, 215, 105, 1);
+    --color-Warning-200: rgba(239, 225, 142, 1);
+    --color-Warning-100: rgba(245, 235, 180, 1);
+    --color-Warning-50: rgba(245, 235, 180, 1);
+
+    /* Success */
+    --color-Success-600: rgba(45, 215, 30, 1);
+    --color-Success-500: rgba(45, 215, 30, 1);
+    --color-Success-400: rgba(80, 229, 67, 1);
+    --color-Success-300: rgba(115, 234, 105, 1);
+    --color-Success-200: rgba(150, 239, 142, 1);
+    --color-Success-100: rgba(185, 245, 180, 1);
+    --color-Success-50: rgba(220, 250, 217, 1);
+
+    /* Error */
+    --color-Error-600: rgba(215, 30, 30, 1);
+    --color-Error-500: rgba(215, 30, 30, 1);
+    --color-Error-400: rgba(229, 67, 67, 1);
+    --color-Error-300: rgba(234, 105, 105, 1);
+    --color-Error-200: rgba(239, 142, 142, 1);
+    --color-Error-100: rgba(245, 180, 180, 1);
+    --color-Error-50: rgba(250, 217, 217, 1);
+
+    /* Secondrary */
+    --color-secondary-600: rgba(145, 118, 234, 1);
+    --color-secondary-500: rgba(145, 118, 234, 1);
+    --color-secondary-400: rgba(180, 162, 241, 1);
+    --color-secondary-300: rgba(195, 181, 244, 1);
+    --color-secondary-200: rgba(225, 218, 249, 1);
+    --color-secondary-100: rgba(240, 236, 252, 1);
+    --color-secondary-50: rgba(247, 246, 254, 1);
+
+    /* Neutral */
+    --color-Neutral-600: rgba(10, 10, 15, 1);
+    --color-Neutral-500: rgba(31, 30, 46, 1);
+    --color-Neutral-400: rgba(76, 75, 88, 1);
+    --color-Neutral-300: rgba(121, 120, 130, 1);
+    --color-Neutral-200: rgba(165, 165, 171, 1);
+    --color-Neutral-100: rgba(210, 210, 213, 1);
+    --color-Neutral-50: rgba(242, 242, 243, 1);
+
+    /* primary */
+    --color-primary-600: rgba(204, 110, 60, 1);
+    --color-primary-500: rgba(204, 110, 60, 1);
+    --color-primary-400: rgba(229, 124, 67, 1);
+    --color-primary-300: rgba(234, 150, 105, 1);
+    --color-primary-200: rgba(239, 176, 142, 1);
+    --color-primary-100: rgba(245, 203, 180, 1);
+    --color-primary-50: rgba(250, 229, 217, 1);
+
+    /* Tertiary */
+    --color-Tertiary-600: rgba(83, 145, 208, 1);
+    --color-Tertiary-500: rgba(83, 145, 208, 1);
+    --color-Tertiary-400: rgba(117, 167, 217, 1);
+    --color-Tertiary-300: rgba(152, 189, 227, 1);
+    --color-Tertiary-200: rgba(186, 211, 236, 1);
+    --color-Tertiary-100: rgba(221, 233, 246, 1);
+    --color-Tertiary-50: rgba(237, 244, 250, 1);
+
+  }
+}

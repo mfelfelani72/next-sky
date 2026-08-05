@@ -7,16 +7,16 @@
  */
 
 import { create } from "zustand";
-import { isBrowser, setCookie, getCookie } from "@/libs/cookieUtils";
+import { isBrowser, setCookie, getCookie } from "@/utilities/app/cookieUtils";
 import { persist, createJSONStorage } from "zustand/middleware";
 
 // Constants
 
-import { languages, Lang } from "@/configs/language";
+import { languages, Lang } from "@/configs/app/language";
 
 // Interfaces
 
-import { LangState } from "@/Interfaces/dictionary";
+import { LangState } from "@/interfaces/app/dictionary";
 
 // Functions
 

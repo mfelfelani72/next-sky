@@ -7,45 +7,116 @@
  */
 
 import type { ReactNode } from "react";
+import { Suspense } from "react";
+import type { Metadata, Viewport } from "next";
+
+// Constants
+
+const allowIndex = process.env.NEXT_PUBLIC_ALLOW_INDEX === 'true';
+
+// Components
+
+import Loading from "./loading";
+import Analysis from "./Analysis";
 
 // Fonts
 
-import { satoshi, yekanBakh } from "@/libraries/app/fonts";
+import { satoshi, iranSans } from "@/libraries/app/fonts";
 
 // CSS
 
 import "./globals.css";
 
-// Functions
+import { getCookieAppTheme, getCookieAppLang } from "@/utilities/app/cookieUtils";
 
-import { getCookieAppTheme } from "@/libraries/app/cookieUtils";
+const capitalLicenseName =
+  (process.env.NEXT_PUBLIC_LICENSE_NAME || "sky")
+    .charAt(0)
+    .toUpperCase() +
+  (process.env.NEXT_PUBLIC_LICENSE_NAME || "sky").slice(1);
+
+export const metadata: Metadata = {
+  title: capitalLicenseName,
+  manifest: "/manifest.json",
+
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "default",
+    title: capitalLicenseName,
+  },
+
+  robots: allowIndex ? {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  } : {
+    index: false,
+    follow: false,
+    googleBot: {
+      index: false,
+      follow: false,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+      noarchive: true,
+      nosnippet: true,
+    },
+  },
+
+  other: allowIndex ? {
+
+    'bingbot': 'index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1',
+    'yandex': 'index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1',
+    'slurp': 'index, follow',
+    'duckduckbot': 'index, follow',
+  } : {
+    'bingbot': 'noindex, nofollow, noarchive, nosnippet',
+    'yandex': 'noindex, nofollow, noarchive, nosnippet',
+    'slurp': 'noindex, nofollow',
+    'duckduckbot': 'noindex, nofollow',
+  },
+
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#ffffff" },
+    { media: "(prefers-color-scheme: dark)", color: "#000000" },
+  ],
+};
 
 export default async function RootLayout({
   children,
 }: {
   children: ReactNode;
 }) {
+  //  dark and light
+
   const theme = await getCookieAppTheme();
+  const lang = await getCookieAppLang();
 
   return (
     <html
-      className={`${yekanBakh.variable} ${satoshi.variable} ${
-        theme === "dark" ? "dark" : ""
-      }`}
+      className={`${iranSans.variable} ${satoshi.variable} ${theme === "dark" ? "dark" : ""
+        }`}
+      lang={lang.lang}
+      data-theme={process.env.NEXT_PUBLIC_LICENSE_NAME}
     >
       <head>
-        <meta name="robots" content="noindex, nofollow, noarchive, nosnippet" />
-        <meta
-          name="googlebot"
-          content="noindex, nofollow, noarchive, nosnippet"
-        />
-        <meta
-          name="bingbot"
-          content="noindex, nofollow, noarchive, nosnippet"
-        />
-        <meta name="yandex" content="noindex, nofollow, noarchive, nosnippet" />
+        <Analysis />
       </head>
-      <body className="overflow-auto">{children}</body>
+      <body className="overflow-auto font-iranSans">
+        <Suspense fallback={<Loading />}>{children}</Suspense>
+      </body>
     </html>
   );
 }

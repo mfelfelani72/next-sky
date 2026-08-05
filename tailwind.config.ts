@@ -21,11 +21,11 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        "yekan-bakh": ["var(--font-yekan-bakh)", "system-ui", "sans-serif"],
         "space-grotesk": ["var(--font-space-grotesk)", "monospace"],
         satoshi: ["var(--font-satoshi)", "system-ui", "sans-serif"],
+        iranSans: ["var(--font-iranSans)", "system-ui", "sans-serif"],
       },
     },
   },
-  plugins: [],
+  plugins: [require("tailwindcss-animate")],
 };

@@ -13,7 +13,7 @@ import { getDictionary } from "@/locale";
 
 // Interfaces
 
-import { type Lang } from "@/configs/language";
+import { type Lang } from "@/configs/app/language";
 
 // Zustand
 

@@ -18,8 +18,40 @@
         "name": "next"
       }
     ],
-    "paths": {
-       "@/*": ["./src/*"],
+   "paths": {
+      "@/*": [
+        "./src/*"
+      ],
+      "@/components/*": [
+        "./src/components/*"
+      ],
+      "@/LangStore": [
+        "./src/stores/LangStore"
+      ],
+      "@/Store/*": [
+        "./src/stores/*"
+      ],
+      "@/hooks": [
+        "./src/hooks/"
+      ],
+      "@/libs": [
+        "./src/libraries/"
+      ],
+      "@/utils": [
+        "./src/utilities/"
+      ],
+      "@/tv/*": [
+        "./src/components/ui/tv/*"
+      ],
+      "@/desktop/*": [
+        "./src/components/ui/desktop/*"
+      ],
+      "@/ipad/*": [
+        "./src/components/ui/ipad/*"
+      ],
+      "@/mobile/*": [
+        "./src/components/ui/mobile/*"
+      ]
     }
   },
   "include": [

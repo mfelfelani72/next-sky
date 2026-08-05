@@ -8,7 +8,7 @@
 
 import { create } from "zustand";
 import { persist, createJSONStorage } from "zustand/middleware";
-import { isBrowser, setCookie, getCookie } from "@/libs/cookieUtils";
+import { isBrowser, setCookie, getCookie } from "@/utilities/app/cookieUtils";
 
 // Types
 

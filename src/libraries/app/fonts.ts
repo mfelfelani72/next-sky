@@ -8,58 +8,30 @@
 
 import localFont from "next/font/local";
 
-export const yekanBakh = localFont({
-  src: [
-    {
-      path: "../../../public/fonts/Yekan_Bakh_Light.otf",
-      weight: "300",
-      style: "normal",
-    },
-    {
-      path: "../../../public/fonts/Yekan_Bakh_Regular.otf",
-      weight: "400",
-      style: "normal",
-    },
-    {
-      path: "../../../public/fonts/Yekan_Bakh_Medium.otf",
-      weight: "500",
-      style: "normal",
-    },
-    {
-      path: "../../../public/fonts/Yekan_Bakh_Bold.otf",
-      weight: "700",
-      style: "normal",
-    },
-  ],
-  variable: "--font-yekan-bakh",
-  display: "swap",
-  preload: true,
-});
-
 export const spaceGrotesk = localFont({
   src: [
     {
-      path: "../../../public/fonts/SpaceGrotesk-Light.ttf",
+      path: "../../../public/shared/fonts/SpaceGrotesk-Light.ttf",
       weight: "300",
       style: "normal",
     },
     {
-      path: "../../../public/fonts/SpaceGrotesk-Regular.ttf",
+      path: "../../../public/shared/fonts/SpaceGrotesk-Regular.ttf",
       weight: "400",
       style: "normal",
     },
     {
-      path: "../../../public/fonts/SpaceGrotesk-Medium.ttf",
+      path: "../../../public/shared/fonts/SpaceGrotesk-Medium.ttf",
       weight: "500",
       style: "normal",
     },
     {
-      path: "../../../public/fonts/SpaceGrotesk-SemiBold.ttf",
+      path: "../../../public/shared/fonts/SpaceGrotesk-SemiBold.ttf",
       weight: "600",
       style: "normal",
     },
     {
-      path: "../../../public/fonts/SpaceGrotesk-Bold.ttf",
+      path: "../../../public/shared/fonts/SpaceGrotesk-Bold.ttf",
       weight: "700",
       style: "normal",
     },
@@ -69,25 +41,52 @@ export const spaceGrotesk = localFont({
   preload: true,
 });
 
+export const iranSans = localFont({
+  src: [
+    {
+      path: '../../../public/shared/fonts/IranSans_UltraLight.ttf',
+      weight: '300',
+      style: 'normal',
+    },
+    {
+      path: '../../../public/shared/fonts/IranSans_Light.ttf',
+      weight: '400',
+      style: 'normal',
+    },
+    {
+      path: '../../../public/shared/fonts/IranSans_Medium.ttf',
+      weight: '500',
+      style: 'normal',
+    },
+    {
+      path: '../../../public/shared/fonts/IranSans_Bold.ttf',
+      weight: '700',
+      style: 'normal',
+    },
+  ],
+  variable: '--font-iranSans',
+  display: 'swap',
+})
+
 export const satoshi = localFont({
   src: [
     {
-      path: "../../../public/fonts/Satoshi-Light.otf",
+      path: "../../../public/shared/fonts/Satoshi-Light.otf",
       weight: "300",
       style: "normal",
     },
     {
-      path: "../../../public/fonts/Satoshi-Regular.otf",
+      path: "../../../public/shared/fonts/Satoshi-Regular.otf",
       weight: "400",
       style: "normal",
     },
     {
-      path: "../../../public/fonts/Satoshi-Medium.otf",
+      path: "../../../public/shared/fonts/Satoshi-Medium.otf",
       weight: "500",
       style: "normal",
     },
     {
-      path: "../../../public/fonts/Satoshi-Bold.otf",
+      path: "../../../public/shared/fonts/Satoshi-Bold.otf",
       weight: "700",
       style: "normal",
     },

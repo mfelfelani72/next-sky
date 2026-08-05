@@ -1,8 +1,8 @@
 {
-  "title": "AimoonHub",
-  "description": "AimoonHub delivers AI-powered crypto trading signals with real-time news, live prices, and smart market insights to help beginners trade confidently.",
+  "title": "sky",
+  "description": "sky delivers AI-powered crypto trading signals with real-time news, live prices, and smart market insights to help beginners trade confidently.",
   "keywords": [
-    "AimoonHub",
+    "sky",
     "AI trading signals",
     "crypto trading signals",
     "real-time crypto news",
@@ -15,17 +15,17 @@
     "cryptocurrency signals",
     "crypto AI tools"
   ],
-  "publisher": "AimoonHub",
+  "publisher": "sky",
   "openGraph": {
-    "title": "AimoonHub – AI-Powered Crypto Trading Signals",
-    "description": "AimoonHub provides AI-driven trading signals, real-time crypto news, live prices, and smart market insights to help traders make confident decisions.",
-    "images": "/next-aimoonhub/images/png/opengraph.png"
+    "title": "sky – AI-Powered Crypto Trading Signals",
+    "description": "sky provides AI-driven trading signals, real-time crypto news, live prices, and smart market insights to help traders make confident decisions.",
+    "images": "/next-sky/images/png/opengraph.png"
   },
   "twitter": {
     "card": "summary_large_image",
-    "title": "AimoonHub – AI-Powered Crypto Trading Signals",
-    "description": "AimoonHub delivers AI-based crypto trading signals, real-time news, live prices, and smart market insights for confident trading.",
-    "images": "/next-aimoonhub/images/png/opengraph.png",
+    "title": "sky – AI-Powered Crypto Trading Signals",
+    "description": "sky delivers AI-based crypto trading signals, real-time news, live prices, and smart market insights for confident trading.",
+    "images": "/next-sky/images/png/opengraph.png",
     "site": ""
   }
 }
