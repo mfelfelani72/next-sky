@@ -10,8 +10,8 @@ import { headers } from "next/headers";
 
 // Functions
 
-import { buildBreadcrumbs } from "@/libs/breadcrumb";
-import { createTranslator } from "@/libs/translation";
+import { buildBreadcrumbs } from "@/libraries/app/breadcrumb";
+import { createTranslator } from "@/libraries/app/translation";
 
 // Interfaces
 
