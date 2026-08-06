@@ -70,25 +70,25 @@ const LoginForm = () => {
           <InputEmail
             id="email"
             label={
-              <div className="xs:text-[16px] text-gray-300">{t("email")}</div>
+              <div className="xs:text-[16px] text-Neutral-100">{t("email")}</div>
             }
             validate={t("invalid_email")}
             placeholder={t("enter_your_email")}
             className={
-              "flex justify-between h-11 rounded-lg xl:placeholder:text-sm xs:placeholder:text-xs shadow-inner bg-white/20 border-white/10 text-white placeholder:text-white/30"
+              "flex justify-between h-11 rounded-lg xl:placeholder:text-sm xs:placeholder:text-xs shadow-inner bg-white/20 border-Neutral-200 text-white placeholder:text-Neutral-100"
             }
           />
           <InputPassword
             id="password"
             label={
-              <div className="mt-10 xs:text-[16px] text-gray-300">
+              <div className="mt-10 xs:text-[16px] text-Neutral-100">
                 {t("password")}
               </div>
             }
             validate={t("invalid_password")}
             placeholder={t("enter_your_password")}
             className={
-              "flex justify-between h-11 rounded-lg xl:placeholder:text-sm xs:placeholder:text-xs shadow-inner bg-white/20 border-white/10 text-white placeholder:text-white/30"
+              "flex justify-between h-11 rounded-lg xl:placeholder:text-sm xs:placeholder:text-xs shadow-inner bg-white/20 border-Neutral-200 text-white placeholder:text-Neutral-100"
             }
           />
         </div>
@@ -96,8 +96,8 @@ const LoginForm = () => {
         {/* Forgot Password Link */}
         <div className="flex justify-end mt-2">
           <LocalizedLink
-            href="/forgot-password"
-            className="text-xs text-white/30 hover:text-white/60 transition-colors"
+            href="/auth/forgot-password"
+            className="text-xs text-Neutral-100 hover:text-primary-400 transition-colors"
           >
             {t("forgot_password")}
           </LocalizedLink>
@@ -106,9 +106,9 @@ const LoginForm = () => {
       <div>
         {/* Divider */}
         <div className="flex items-center gap-4 mt-6">
-          <div className="flex-1 h-px bg-white/10" />
-          <span className="text-xs text-white/20">{t("or_continue_with")}</span>
-          <div className="flex-1 h-px bg-white/10" />
+          <div className="flex-1 h-px bg-Neutral-100" />
+          <span className="text-xs text-Neutral-100">{t("or_continue_with")}</span>
+          <div className="flex-1 h-px bg-Neutral-100" />
         </div>
 
         {/* Social Login Buttons */}
@@ -116,15 +116,15 @@ const LoginForm = () => {
           {/* Google */}
           <button
             type="button"
-            className="flex-1 flex items-center justify-center gap-2 py-2.5 rounded-lg border border-white/10 bg-white/5 hover:bg-white/10 transition-all duration-300 text-white/60 hover:text-white/80"
+            className="flex-1 flex items-center justify-center gap-2 py-2.5 rounded-lg border border-Neutral-200 bg-white/20 hover:bg-white/30 transition-all duration-300 text-Neutral-100 cursor-pointer"
           >
             <GoogleIcon />
-            <span className="text-sm">Google</span>
+            <span className="text-sm">{t("google")}</span>
           </button>
         </div>
 
         {/* Register Link */}
-        <p className="text-center mt-6 text-sm text-white/30">
+        <p className="text-center mt-6 text-sm text-Neutral-100">
           {t("dont_have_account")}{" "}
           <LocalizedLink
             href="/register"
