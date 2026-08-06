@@ -7,11 +7,12 @@
  */
 
 // Components
+
 import BrandCard from "@/components/ui/auth/common/BrandCard";
 
 // Functions
-import { cn } from "@/libraries/app/cn";
 
+import { cn } from "@/libraries/app/cn";
 interface RightSidebarProps {
   className?: string;
   children?: React.ReactNode;
@@ -22,20 +23,18 @@ const RightSidebar = ({ className, children }: RightSidebarProps) => {
     <div
       className={cn(
         "flex flex-col w-full px-6 py-5 relative",
-        // 🔥 Completely solid white - NO glass
         "bg-white backdrop-blur-none",
         "border border-white/20",
         "shadow-2xl shadow-black/15",
         "ltr:rounded-r-2xl rtl:rounded-l-2xl",
         "xl:px-8 xl:py-6",
-        className
+        className,
       )}
     >
-      {/* 🌟 White solid overlay with glow */}
-      <div className="absolute inset-0 bg-gradient-to-br from-white/40 via-white/10 to-transparent pointer-events-none" />
+      <div className="absolute inset-0 bg-linear-to-br from-white/40 via-white/10 to-transparent pointer-events-none" />
 
-      {/* 📝 Content */}
-      <div className="flex-1 flex flex-col items-center justify-between p-4 pt-20 z-10 relative">
+      {/* Content */}
+      <div className="flex-1 flex flex-col items-center justify-between p-4 z-10 relative">
         <BrandCard />
         {children}
       </div>

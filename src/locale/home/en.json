@@ -1,5 +1,4 @@
 {
-  "sky": "sky",
   "welcome_title": "Breaking News Analysis <0>{{financial_markets}}</0> and <1>{{cryptocurrencies}}</1>",
   "financial_markets": "Financial Markets",
   "cryptocurrencies": "Cryptocurrencies",

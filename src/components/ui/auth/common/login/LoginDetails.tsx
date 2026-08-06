@@ -8,12 +8,20 @@
 
 "use client";
 
-import { useTranslation } from "@/hooks/app/useTranslation";
+// Components
 
 import { Shield, Bolt, Eye } from "lucide-react";
 
+// Hooks
+
+import { useTranslation } from "@/hooks/app/useTranslation";
+
 const LoginDetails = () => {
+  // Hooks
+
   const { t } = useTranslation();
+
+  // Constants
 
   const features = [
     { icon: Shield, label: t("encrypted"), color: "text-emerald-600" },

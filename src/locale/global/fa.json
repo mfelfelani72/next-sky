@@ -1,13 +1,11 @@
 {
-  "loaderPage": "",
+  "sky": "Sky",
+
+  "--> loaderPage <--": "**=============== loaderPage ============**",
 
   "loading": "در حال بارگیری",
-  "sky": "ایمون هاب",
-  "coin": "سکه",
-  "sentiment": "احساسات",
-  "news": "اخبار",
 
-  "header": "",
+  "--> header <--": "**=============== header ============**",
 
   "home": "صفحه اصلی",
   "about_us": "درباره ما",
@@ -15,10 +13,12 @@
   "features": "ویژگی ما",
   "prices": "قیمت ها",
   "support": "پشتیبانی",
-  "login_telegram": "ورود به ربات تلگرام",
-
-  "charts": "",
+  
+  "--> charts <--": "**=============== charts ============**",
 
   "max": "بیشینه",
-  "error": "متأسفانه یک خطا رخ داد :("
+
+  "--> system message <--": "**=============== system message ============**",
+
+  "error": "Unfortunately, an error occurred :("
 }

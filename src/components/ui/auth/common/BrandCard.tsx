@@ -10,9 +10,11 @@
 import { useTranslation } from "@/hooks/app/useTranslation";
 
 // Components
+
 import Image from "@/components/base/Image";
 
 // Functions
+
 import { cn } from "@/libraries/app/cn";
 
 // Interfaces
@@ -21,34 +23,36 @@ export interface BrandCardProps {
 }
 
 const BrandCard: React.FC<BrandCardProps> = ({ className }) => {
+  // Hooks
+
   const { t } = useTranslation();
 
   return (
     <div
-      className={cn(
-        "flex flex-col items-center gap-4 text-center",
-        className
-      )}
+      className={cn("flex flex-col items-center gap-4 text-center", className)}
     >
       {/* Logo */}
-      <div className="h-16 w-16 xl:h-20 xl:w-20">
+
+      <div className="h-16 w-16 xl:h-20 xl:w-20 shrink-0">
         <Image
-          src="/images/svg/Logo-Website-2.svg"
+          src="/images/png/logo.png"
           alt="Logo"
           width={80}
           height={80}
-          className="h-full w-full object-contain" // ❌ حذف brightness-0 invert
+          unoptimized={true}
+          className="h-full w-full object-contain"
+          enableLoading={false} 
         />
       </div>
 
-      {/* Brand Name - تیره */}
-      <h1 className="text-3xl font-bold tracking-tight text-gray-800 xl:text-4xl 2xl:text-5xl">
-        {t("brand_name")}
+      {/* Brand Name */}
+      <h1 className="text-3xl font-bold tracking-tight text-Neutral-400 xl:text-4xl 2xl:text-5xl">
+        {t(process.env.NEXT_PUBLIC_LICENSE_NAME || "")}
       </h1>
 
-      {/* Tagline - تیره و کمرنگ */}
+      {/* Tagline */}
       <p className="text-xs font-light text-gray-400 xl:text-sm">
-        {t("your_cryptocurrency_newspaper")}
+        {t("right_sidebar_description")}
       </p>
     </div>
   );
