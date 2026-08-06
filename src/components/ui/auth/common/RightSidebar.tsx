@@ -23,7 +23,7 @@ const RightSidebar = ({ className, children }: RightSidebarProps) => {
     <div
       className={cn(
         "flex flex-col w-full px-6 py-5 relative",
-        "bg-white backdrop-blur-none",
+        "bg-white/80 backdrop-blur-none",
         "border border-white/20",
         "shadow-2xl shadow-black/15",
         "ltr:rounded-r-2xl rtl:rounded-l-2xl",

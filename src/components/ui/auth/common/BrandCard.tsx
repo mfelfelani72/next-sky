@@ -33,9 +33,9 @@ const BrandCard: React.FC<BrandCardProps> = ({ className }) => {
     >
       {/* Logo */}
 
-      <div className="h-16 w-16 xl:h-20 xl:w-20 shrink-0">
+      <div className="h-20 w-20 xl:h-24 xl:w-24 shrink-0">
         <Image
-          src="/images/png/logo.png"
+          src="/images/jpg/logo.png"
           alt="Logo"
           width={80}
           height={80}
@@ -46,12 +46,12 @@ const BrandCard: React.FC<BrandCardProps> = ({ className }) => {
       </div>
 
       {/* Brand Name */}
-      <h1 className="text-3xl font-bold tracking-tight text-Neutral-400 xl:text-4xl 2xl:text-5xl">
+      <h1 className="text-3xl font-bold tracking-tight text-cyan-800 xl:text-4xl 2xl:text-5xl">
         {t(process.env.NEXT_PUBLIC_LICENSE_NAME || "")}
       </h1>
 
       {/* Tagline */}
-      <p className="text-xs font-light text-gray-400 xl:text-sm">
+      <p className="text-xs text-Neutral-400 xl:text-sm">
         {t("right_sidebar_description")}
       </p>
     </div>

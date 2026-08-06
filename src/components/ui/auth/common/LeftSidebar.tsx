@@ -36,8 +36,7 @@ const LeftSidebar = ({
     <div
       className={cn(
         "flex flex-col w-full px-6 py-5 relative overflow-hidden",
-        // 🔥 Ultra subtle glass - very transparent
-        "bg-white/[0.03] backdrop-blur-sm",
+        "bg-white/3 backdrop-blur-sm",
         "border border-white/5",
         "shadow-2xl shadow-black/10",
         "ltr:rounded-l-2xl rtl:rounded-r-2xl",
@@ -46,7 +45,7 @@ const LeftSidebar = ({
       )}
     >
       {/* ✨ Soft glow highlight - increases visibility */}
-      <div className="absolute inset-0 bg-gradient-to-br from-white/5 via-transparent to-transparent pointer-events-none" />
+      <div className="absolute inset-0 bg-linear-to-br from-white/5 via-transparent to-transparent pointer-events-none" />
       
       {/* ✨ Subtle edge glow - makes glass effect more visible */}
       <div className="absolute inset-0 rounded-l-2xl shadow-[inset_0_0_80px_rgba(255,255,255,0.03)] pointer-events-none" />
