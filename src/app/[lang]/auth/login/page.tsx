@@ -28,6 +28,7 @@ export async function generateMetadata({
 
 async function Page({ params }: { params: Promise<{ lang: string }> }) {
   const resolvedParams = await params;
+
   const lang =
     resolvedParams.lang in languages ? (resolvedParams.lang as Lang) : "en";
 

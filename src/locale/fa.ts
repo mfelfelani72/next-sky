@@ -13,7 +13,7 @@ import global_fa from "./global/fa.json";
 import home_fa from "./home/fa.json";
 import auth_fa from "./auth/fa.json";
 
-const meta = await getMeta("en");
+const meta = await getMeta("fa");
 
 const en = {
   ...meta,

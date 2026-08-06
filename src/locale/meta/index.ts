@@ -6,7 +6,7 @@
  * @Description: Load meta files dynamically
  */
 
-const licenseName = process.env.NEXT_PUBLIC_LICENSE_NAME || "aimoonhub";
+const licenseName = process.env.NEXT_PUBLIC_LICENSE_NAME || "sky";
 
 async function loadMetaFile(path: string) {
   try {
