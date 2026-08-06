@@ -23,7 +23,7 @@ export default function Login() {
     <>
       <div className="flex flex-row h-screen w-full items-center justify-center">
        
-        <div className="relative inline-flex flex-row z-120 h-[80dvh] w-[120dvh]">
+        <div className="relative inline-flex flex-row z-120 w-[55dvw] h-[75dvh]">
           <LeftSidebar
             title={t("login_title")}
             description={t("login_description")}

@@ -36,7 +36,7 @@ const LeftSidebar = ({
     <div
       className={cn(
         "flex flex-col w-full px-6 py-5 relative overflow-hidden",
-        "bg-white/3 backdrop-blur-sm",
+        "bg-white/3 backdrop-blur-lg",
         "border border-white/5",
         "shadow-2xl shadow-black/10",
         "ltr:rounded-l-2xl rtl:rounded-r-2xl",
@@ -44,10 +44,10 @@ const LeftSidebar = ({
         className
       )}
     >
-      {/* ✨ Soft glow highlight - increases visibility */}
+      {/* Soft glow highlight - increases visibility */}
       <div className="absolute inset-0 bg-linear-to-br from-white/5 via-transparent to-transparent pointer-events-none" />
       
-      {/* ✨ Subtle edge glow - makes glass effect more visible */}
+      {/* Subtle edge glow - makes glass effect more visible */}
       <div className="absolute inset-0 rounded-l-2xl shadow-[inset_0_0_80px_rgba(255,255,255,0.03)] pointer-events-none" />
 
       {/* Header */}
@@ -56,19 +56,19 @@ const LeftSidebar = ({
           {/* Back Button - Dark version */}
           <button
             onClick={() => router.back()}
-            className="group flex h-8 w-8 items-center justify-center rounded-full border border-gray-200/50 bg-white/30 text-gray-400 transition-all hover:bg-white/50 hover:border-gray-300 hover:text-gray-600"
+            className="group  cursor-pointer flex h-8 w-8 items-center justify-center rounded-full border border-gray-200/50 bg-white/30 text-gray-400 transition-all hover:bg-white/20 hover:border-gray-300 hover:text-gray-600"
           >
-            <ArrowLeft className="h-4 w-4 transition-transform group-hover:scale-110 rtl:rotate-180" />
+            <ArrowLeft className="h-4 w-4 transition-transform group-hover:scale-110 rtl:rotate-180 text-Neutral-100" />
           </button>
 
           {/* Title - Dark */}
-          <h1 className="text-lg font-light tracking-wide text-gray-700 xl:text-xl">
+          <h1 className="text-lg font-semibold tracking-wide text-Neutral-50 xl:text-xl">
             {title}
           </h1>
         </div>
 
         {/* Description - Dark */}
-        <p className="mt-1 max-w-[24rem] text-xs text-gray-400 ltr:pl-11 rtl:pr-11 xl:text-sm">
+        <p className="mt-1 max-w-[24rem] text-xs text-Neutral-100 ltr:pl-11 rtl:pr-11 xl:text-sm">
           {description}
         </p>
       </header>
