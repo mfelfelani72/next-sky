@@ -22,23 +22,11 @@
       "@/*": [
         "./src/*"
       ],
-      "@/components/*": [
-        "./src/components/*"
-      ],
       "@/LangStore": [
         "./src/stores/LangStore"
       ],
       "@/Store/*": [
         "./src/stores/*"
-      ],
-      "@/hooks": [
-        "./src/hooks/"
-      ],
-      "@/libs": [
-        "./src/libraries/"
-      ],
-      "@/utils": [
-        "./src/utilities/"
       ],
       "@/tv/*": [
         "./src/components/ui/tv/*"

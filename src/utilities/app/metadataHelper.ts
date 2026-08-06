@@ -139,8 +139,6 @@ function buildMetadataFromContent(
     applicationName: SITE_NAME,
     authors: data.author ? [{ name: data.author }] : [{ name: SITE_NAME }],
     creator: data.author || SITE_NAME,
-    viewport: "width=device-width, initial-scale=1.0",
-    themeColor: process.env.NEXT_PUBLIC_PWA_THEME_COLOR || "",
     title: data.title,
     description: data.description,
     publisher: data.provider,
@@ -241,8 +239,6 @@ export async function generatePageMetadata(
     applicationName: SITE_NAME,
     authors: [{ name: SITE_NAME }],
     creator: SITE_NAME,
-    viewport: "width=device-width, initial-scale=1.0",
-    themeColor: process.env.NEXT_PUBLIC_PWA_THEME_COLOR || "",
     openGraph: {
       title: pageTitle,
       description: finalMeta.description,
