@@ -127,7 +127,7 @@ const LoginForm = () => {
         <p className="text-center mt-2 text-sm text-Neutral-100">
           {t("dont_have_account")}{" "}
           <LocalizedLink
-            href="/register"
+            href="/auth/register"
             className="text-primary-400 hover:text-primary-300 font-medium transition-colors"
           >
             {t("create_account")}

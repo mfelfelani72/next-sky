@@ -7,7 +7,7 @@
 
 "use client";
 
-import { useTranslation } from "@/hooks/useTranslation";
+import { useTranslation } from "@/hooks/app/useTranslation";
 
 // Components
 import LeftSidebar from "@/components/ui/auth/common/LeftSidebar";

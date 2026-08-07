@@ -2,58 +2,45 @@
  * @Author: Mohammad Felfelani
  * @Email: mfelfelani72@gmail.com
  * @Team:
- * @Date: 2025-12-31 13:08:05
- * @Description:
+ * @Date: 2025-12-31 07:55:26
+ * @Description: Login Details - Dark text for white bg
  */
 
 "use client";
 
-import { useTranslation } from "@/hooks/useTranslation";
-import { Zap, TrendingUp, Shield } from "lucide-react";
+// Components
+
+import { Shield, Bolt, Eye } from "lucide-react";
+
+// Hooks
+
+import { useTranslation } from "@/hooks/app/useTranslation";
 
 const RegisterDetails = () => {
   // Hooks
 
   const { t } = useTranslation();
 
+  // Constants
+
+  const features = [
+    { icon: Shield, label: t("encrypted"), color: "text-emerald-600" },
+    { icon: Bolt, label: t("fast"), color: "text-amber-600" },
+    { icon: Eye, label: t("protected"), color: "text-sky-600" },
+  ];
+
   return (
-    <>
-      <div className="flex flex-col gap-5 text-center">
-        <div>
-          <div className="flex items-center justify-center gap-2 mb-2">
-            <h2 className="text-2xl font-bold text-white">
-              {t("register_detail_title")}
-            </h2>
+    <div className="px-1">
+      {/* Features - horizontal with colors */}
+      <div className="flex gap-6">
+        {features.map(({ icon: Icon, label, color }) => (
+          <div key={label} className="flex items-center gap-2">
+            <Icon className={`h-4 w-4 ${color} xl:h-5 xl:w-5`} />
+            <span className="text-xs text-gray-500 xl:text-sm">{label}</span>
           </div>
-          <p className="text-sm text-white/60 leading-relaxed">
-            {t("register_detail_description")}
-          </p>
-        </div>
-
-        <div className="flex items-center justify-center gap-5">
-          <div className="flex items-center gap-2">
-            <div className="w-8 h-8 border border-Neutral-200 p-2 rounded-md bg-linear-to-br from-white/10 to-white/5 inline-flex items-center justify-center">
-              <Zap className="h-4 w-4 text-Neutral-50" />
-            </div>
-            <span className="text-sm text-white/70">{t("fast")}</span>
-          </div>
-
-          <div className="flex items-center gap-2">
-            <div className="w-8 h-8 border border-Neutral-200 p-2 rounded-md bg-linear-to-br from-white/10 to-white/5 inline-flex items-center justify-center">
-              <TrendingUp className="h-4 w-4 text-Neutral-50" />
-            </div>
-            <span className="text-sm text-white/70">{t("analysis")}</span>
-          </div>
-
-          <div className="flex items-center gap-2">
-            <div className="w-8 h-8 border border-Neutral-200 p-2 rounded-md bg-linear-to-br from-white/10 to-white/5 inline-flex items-center justify-center">
-              <Shield className="h-4 w-4 text-Neutral-50" />
-            </div>
-            <span className="text-sm text-white/70">{t("free")}</span>
-          </div>
-        </div>
+        ))}
       </div>
-    </>
+    </div>
   );
 };
 

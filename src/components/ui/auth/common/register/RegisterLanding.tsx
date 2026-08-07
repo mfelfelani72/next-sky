@@ -23,11 +23,11 @@ const RegisterIpad = dynamic(
 
 // Functions
 
-import detectComponentsResponsive from "@/libs/detectComponentResponsive";
+import detectComponentsResponsive from "@/libraries/app/detectComponentResponsive";
 
 // Interfaces
 
-import { type Lang } from "@/configs/language";
+import { type Lang } from "@/configs/app/language";
 
 const LoginLanding = async ({ params }: { params: { lang: Lang } }) => {
   const RegisterComponent = await detectComponentsResponsive(
