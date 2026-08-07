@@ -30,7 +30,7 @@ const LoginDetails = () => {
   ];
 
   return (
-    <div className="space-y-5">
+    <div className="px-1">
       {/* Features - horizontal with colors */}
       <div className="flex gap-6">
         {features.map(({ icon: Icon, label, color }) => (

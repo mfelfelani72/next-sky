@@ -20,21 +20,18 @@ export default function Login() {
   const { t } = useTranslation();
 
   return (
-    <>
-      <div className="flex flex-row h-screen w-full items-center justify-center">
-       
-        <div className="relative inline-flex flex-row z-120 w-[55dvw] h-[75dvh]">
-          <LeftSidebar
-            title={t("login_title")}
-            description={t("login_description")}
-          >
-            <LoginForm />
-          </LeftSidebar>
-          <RightSidebar>
-            <LoginDetails />
-          </RightSidebar>
-        </div>
+    <div className="flex flex-row h-screen w-full items-center justify-center">
+      <div className="relative inline-flex flex-row z-120 max-w-[60dvw] h-[77dvh]">
+        <LeftSidebar
+          title={t("login_title")}
+          description={t("login_description")}
+        >
+          <LoginForm />
+        </LeftSidebar>
+        <RightSidebar>
+          <LoginDetails />
+        </RightSidebar>
       </div>
-    </>
+    </div>
   );
 }

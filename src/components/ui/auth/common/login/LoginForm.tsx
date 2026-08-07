@@ -63,7 +63,7 @@ const LoginForm = () => {
   return (
     <form
       onSubmit={handleSubmit}
-      className="flex flex-col h-full animate-in fade-in slide-in-from-bottom-4 duration-500 justify-between"
+      className="flex flex-col h-full w-full animate-in fade-in slide-in-from-bottom-4 duration-500 justify-between"
     >
       <div>
         <div className="flex flex-col">
@@ -75,20 +75,20 @@ const LoginForm = () => {
             validate={t("invalid_email")}
             placeholder={t("enter_your_email")}
             className={
-              "flex justify-between h-11 rounded-lg xl:placeholder:text-sm xs:placeholder:text-xs shadow-inner bg-white/20 border-Neutral-200 text-white placeholder:text-Neutral-100"
+              "flex justify-between h-10 rounded-lg xl:placeholder:text-sm xs:placeholder:text-xs shadow-inner bg-white/20 border-Neutral-200 text-white placeholder:text-Neutral-100"
             }
           />
           <InputPassword
             id="password"
             label={
-              <div className="mt-10 xs:text-[16px] text-Neutral-100">
+              <div className="mt-6 xs:text-[16px] text-Neutral-100">
                 {t("password")}
               </div>
             }
             validate={t("invalid_password")}
             placeholder={t("enter_your_password")}
             className={
-              "flex justify-between h-11 rounded-lg xl:placeholder:text-sm xs:placeholder:text-xs shadow-inner bg-white/20 border-Neutral-200 text-white placeholder:text-Neutral-100"
+              "flex justify-between h-10 rounded-lg xl:placeholder:text-sm xs:placeholder:text-xs shadow-inner bg-white/20 border-Neutral-200 text-white placeholder:text-Neutral-100"
             }
           />
         </div>
@@ -112,11 +112,11 @@ const LoginForm = () => {
         </div>
 
         {/* Social Login Buttons */}
-        <div className="flex gap-3 mt-4">
+        <div className="flex gap-3 mt-2">
           {/* Google */}
           <button
             type="button"
-            className="flex-1 flex items-center justify-center gap-2 py-2.5 rounded-lg border border-Neutral-200 bg-white/20 hover:bg-white/30 transition-all duration-300 text-Neutral-100 cursor-pointer"
+            className="flex-1 flex items-center justify-center gap-2 py-2 rounded-lg border border-Neutral-200 bg-white/20 hover:bg-white/30 transition-all duration-300 text-Neutral-100 cursor-pointer"
           >
             <GoogleIcon />
             <span className="text-sm">{t("google")}</span>
@@ -124,7 +124,7 @@ const LoginForm = () => {
         </div>
 
         {/* Register Link */}
-        <p className="text-center mt-6 text-sm text-Neutral-100">
+        <p className="text-center mt-2 text-sm text-Neutral-100">
           {t("dont_have_account")}{" "}
           <LocalizedLink
             href="/register"
@@ -137,7 +137,7 @@ const LoginForm = () => {
         <button
           type="submit"
           disabled={isLoading}
-          className="w-full mt-6 py-3 rounded-lg bg-linear-to-r from-primary-400 to-primary-500 text-white font-semibold text-sm hover:shadow-lg hover:shadow-primary-400/30 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
+          className="w-full mt-2 py-3 rounded-lg bg-linear-to-r from-primary-400 to-primary-500 text-white font-semibold text-sm hover:shadow-lg hover:shadow-primary-400/30 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
         >
           {isLoading ? (
             <span className="flex items-center justify-center gap-2">

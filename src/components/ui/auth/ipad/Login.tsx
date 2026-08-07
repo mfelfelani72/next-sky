@@ -19,13 +19,13 @@ export default function Login() {
 
   return (
     <>
-      <div className="relative">
+      <div className="flex flex-row h-screen w-full items-center justify-center">
         
-        <div className="relative inline-flex flex-row z-[120] h-full">
+        <div className="relative inline-flex flex-row z-120 max-w-[60dvw] h-[77dvh]">
           <LeftSidebar
             title={t("login_title")}
             description={t("login_description")}
-            className="rounded-2xl w-[32rem]"
+            className="rounded-2xl w-lg"
           >
             <LoginForm />
           </LeftSidebar>

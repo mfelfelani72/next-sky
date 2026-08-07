@@ -68,7 +68,7 @@ const LeftSidebar = ({
         </div>
 
         {/* Description - Dark */}
-        <p className="mt-1 max-w-[24rem] text-xs text-Neutral-100 ltr:pl-11 rtl:pr-11 xl:text-sm">
+        <p className="hidden 4xl:block mt-1 max-w-[24rem] text-xs text-Neutral-100 ltr:pl-11 rtl:pr-11 xl:text-sm">
           {description}
         </p>
       </header>
