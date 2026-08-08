@@ -7,25 +7,28 @@
 
 "use client";
 
-import { useTranslation } from "@/hooks/app/useTranslation";
-
 // Components
 
 import LeftSidebar from "@/components/ui/auth/common/LeftSidebar";
 import RegisterForm from "@/components/ui/auth/common/register/RegisterForm";
 
+// Hooks
+
+import { useTranslation } from "@/hooks/app/useTranslation";
+
 export default function Register() {
+  // Hooks
+
   const { t } = useTranslation();
 
   return (
     <>
-      <div className="relative">
-       
-        <div className="relative inline-flex flex-row z-[120] h-full">
+      <div className="flex flex-row h-screen w-full items-center justify-center">
+        <div className="relative inline-flex flex-row z-120 max-w-[60dvw] h-[77dvh]">
           <LeftSidebar
             title={t("register_title")}
             description={t("register_description")}
-            className="rounded-2xl w-[32rem]"
+            className="rounded-2xl w-lg"
           >
             <RegisterForm />
           </LeftSidebar>

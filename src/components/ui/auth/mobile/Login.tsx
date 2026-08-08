@@ -7,15 +7,18 @@
 
 "use client";
 
-import { useTranslation } from "@/hooks/app/useTranslation";
-
 // Components
 
 import LeftSidebar from "@/components/ui/auth/common/LeftSidebar";
 import LoginForm from "@/components/ui/auth/common/login/LoginForm";
-import BrandCard from "../common/BrandCard";
+
+// Hooks
+
+import { useTranslation } from "@/hooks/app/useTranslation";
 
 const Login = () => {
+  // Hooks
+
   const { t } = useTranslation();
   return (
     <>

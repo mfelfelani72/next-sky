@@ -7,8 +7,6 @@
 
 "use client";
 
-import { useTranslation } from "@/hooks/app/useTranslation";
-
 // Components
 
 import RightSidebar from "@/components/ui/auth/common/RightSidebar";
@@ -16,7 +14,13 @@ import LeftSidebar from "@/components/ui/auth/common/LeftSidebar";
 import RegisterForm from "@/components/ui/auth/common/register/RegisterForm";
 import RegisterDetails from "@/components/ui/auth/common/register/RegisterDetails";
 
+// Hooks
+
+import { useTranslation } from "@/hooks/app/useTranslation";
+
 export default function Login() {
+  // Hooks
+
   const { t } = useTranslation();
 
   return (

@@ -7,20 +7,23 @@
 
 "use client";
 
-import { useTranslation } from "@/hooks/app/useTranslation";
-
 // Components
 
 import LeftSidebar from "@/components/ui/auth/common/LeftSidebar";
 import LoginForm from "@/components/ui/auth/common/login/LoginForm";
 
+// Hooks
+
+import { useTranslation } from "@/hooks/app/useTranslation";
+
 export default function Login() {
+  // Hooks
+
   const { t } = useTranslation();
 
   return (
     <>
       <div className="flex flex-row h-screen w-full items-center justify-center">
-        
         <div className="relative inline-flex flex-row z-120 max-w-[60dvw] h-[77dvh]">
           <LeftSidebar
             title={t("login_title")}
