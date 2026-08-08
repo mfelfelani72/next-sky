@@ -122,7 +122,7 @@ const RegisterForm = ({ lang }: RegisterFormProps) => {
             }
             label={
               <div className="mt-6 xs:text-[16px] text-Neutral-100">
-                {t("re_password")}
+                {t("confirm_password")}
               </div>
             }
             validate={t("mismatch_password")}
@@ -138,7 +138,7 @@ const RegisterForm = ({ lang }: RegisterFormProps) => {
        
         {/* Login Link */}
         <p className="text-center mt-2 text-sm text-Neutral-100">
-          {t("have_account")}{" "}
+          {t("already_have_account?")}{" "}
           <LocalizedLink
             href="/auth/login"
             className="text-primary-400 hover:text-primary-300 font-medium transition-colors"

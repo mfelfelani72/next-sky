@@ -1,8 +1,13 @@
 {
   "login": "Login",
+  "register": "Register",
   "login_title": "Welcome Back",
   "login_description": "Enter your credentials to access your account",
+  "register_title": "Create New Account",
+  "register_description": "Register with your mobile number and password to access all features, manage your profile, and enjoy a personalized experience on our platform",
   "email": "Email",
+  "confirm_password": "Confirm Password",
+  "confirm_your_password": "Confirm your Password",
   "password": "Password",
   "enter_your_email": "Enter your Email",
   "invalid_email": "Your Email is invalid",
@@ -12,9 +17,11 @@
   "or_continue_with": "or continue with",
   "google": "Google",
   "dont_have_account": "Don't have account",
+  "already_have_account?": "Already have an Account?",
   "create_account": "Create account",
   "right_sidebar_description": "Every Return Tells a Story, and Yours is One We Never Tire of Reading, a Tale We Welcome with Open Arms.",
   "encrypted": "Encrypted",
   "fast": "Fast",
-  "protected": "Protected"
+  "protected": "Protected",
+  "invalid_re_password": "Password is not the same as password repetition"
 }
