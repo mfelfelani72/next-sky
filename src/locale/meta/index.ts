@@ -23,11 +23,12 @@ async function loadMetaFile(path: string) {
 }
 
 export async function getMeta(lang: string) {
-  const [meta, meta_home, meta_login, meta_register] = await Promise.all([
+  const [meta, meta_home, meta_login, meta_register,meta_forgotPassword] = await Promise.all([
     loadMetaFile(`${lang}.json`),
     loadMetaFile(`home/${lang}.json`),
     loadMetaFile(`login/${lang}.json`),
     loadMetaFile(`register/${lang}.json`),
+    loadMetaFile(`forgotPassword/${lang}.json`),
   ]);
 
   return {
@@ -35,5 +36,6 @@ export async function getMeta(lang: string) {
     meta_home,
     meta_login,
     meta_register,
+    meta_forgotPassword,
   };
 }

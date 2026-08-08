@@ -1,8 +1,10 @@
 {
   "login": "Login",
   "register": "Register",
+  "forgot_password_title": "Forgot Password Title",
   "login_title": "Welcome Back",
   "login_description": "Enter your credentials to access your account",
+  "forgot_password_description": "Enter your Email to recovery your account",
   "register_title": "Create New Account",
   "register_description": "Register with your mobile number and password to access all features, manage your profile, and enjoy a personalized experience on our platform",
   "email": "Email",
@@ -23,5 +25,6 @@
   "encrypted": "Encrypted",
   "fast": "Fast",
   "protected": "Protected",
-  "invalid_re_password": "Password is not the same as password repetition"
+  "invalid_re_password": "Password is not the same as password repetition",
+  "send": "Send"
 }
