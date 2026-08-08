@@ -16,6 +16,7 @@ import { createMetadata } from "@/utilities/app/metadataHelper";
 // Interfaces
 
 import { languages, type Lang } from "@/configs/app/language";
+import LanguageSwitcher from "@/components/base/LanguageSwitcher";
 
 // Create Metadata
 export async function generateMetadata({
@@ -33,11 +34,13 @@ async function Page({ params }: { params: Promise<{ lang: string }> }) {
     resolvedParams.lang in languages ? (resolvedParams.lang as Lang) : "en";
 
   return (
-    <div className="bg-cover bg-center bg-fixed"
+    <div
+      className="bg-cover bg-center bg-fixed"
       style={{
         backgroundImage: `url('/images/jpg/auth.jpeg')`,
       }}
     >
+      <LanguageSwitcher />
       <Login params={{ lang }} />
     </div>
   );

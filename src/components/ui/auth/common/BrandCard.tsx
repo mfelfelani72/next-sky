@@ -41,7 +41,8 @@ const BrandCard: React.FC<BrandCardProps> = ({ className }) => {
           height={80}
           unoptimized={true}
           className="h-full w-full object-contain"
-          enableLoading={false} 
+          enableLoading={false}
+          loading="eager"
         />
       </div>
 

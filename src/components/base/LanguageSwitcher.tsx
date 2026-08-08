@@ -15,9 +15,6 @@ import { useState, useRef, useEffect } from "react";
 
 import { LanguageIcon } from "forma-ui";
 
-// Functions
-
-import { closeAppDrawer } from "@/libs/componentsHelpers";
 
 // Zustand
 
@@ -76,7 +73,7 @@ export default function LanguageSwitcher() {
     setPendingLang(newLang);
 
     setIsOpen(false);
-    closeAppDrawer();
+  
     setDrawerContent(null);
 
     router.replace(newPath);
