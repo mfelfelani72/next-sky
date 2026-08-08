@@ -25,8 +25,8 @@ const ForgotPassword = () => {
       <div className="flex flex-row h-screen w-full items-center justify-center">
         <div className="h-full flex items-center justify-center px-4">
           <LeftSidebar
-            title={t("login_title")}
-            description={t("login_description")}
+            title={t("forgot_password_title")}
+            description={t("forgot_password_description")}
             className="w-full h-[calc(100vh-10rem)] rounded-2xl shadow-2xl"
           >
             <ForgotPasswordForm />

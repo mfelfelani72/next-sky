@@ -64,7 +64,7 @@ export default function Loading({ className }: LoadingProps) {
         {logosharp}
       </pre>
       <div className="text-lg font-bold text-primary-600 drop-shadow-sm">
-        {t("brand_name")}
+        {t(process.env.NEXT_PUBLIC_LICENSE_NAME || "")}
       </div>
 
       <div className="w-40 mt-1">
