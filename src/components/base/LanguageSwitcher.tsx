@@ -17,8 +17,7 @@ import { LanguageIcon } from "forma-ui";
 
 // Zustand
 
-import { useLangStore } from "@/LangStore";
-import { useToolsStore } from "@/Store/ToolsStore";
+import { useLangStore } from "@/stores/LangStore";
 
 // Interfaces
 
@@ -31,7 +30,7 @@ import {
 
 export default function LanguageSwitcher() {
   // Hooks
-  const { setDrawerContent } = useToolsStore();
+
   const router = useRouter();
   const pathname = usePathname();
 
@@ -72,8 +71,6 @@ export default function LanguageSwitcher() {
     setPendingLang(newLang);
 
     setIsOpen(false);
-
-    setDrawerContent(null);
 
     router.replace(newPath);
   };

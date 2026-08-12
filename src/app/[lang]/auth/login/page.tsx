@@ -1,48 +1,24 @@
-/*
- * @Author: Mohammad Felfelani
- * @Email: mfelfelani72@gmail.com
- * @Team:
- * @Date: 2025-12-29 05:41:18
- * @Description:
- */
+import React from "react";
+import { Login } from "next-auth-mfelfelani72";
 
-// Components
-
-import Login from "@/components/ui/auth/common/login/LoginLanding";
-// Functions
-
-import { createMetadata } from "@/utilities/app/metadataHelper";
-
-// Interfaces
-
-import { languages, type Lang } from "@/configs/app/language";
-
-// Create Metadata
-export async function generateMetadata({
-  params,
-}: {
-  params: Promise<{ lang: string }>;
-}) {
-  return createMetadata(await params, "login");
-}
-
-async function Page({ params }: { params: Promise<{ lang: string }> }) {
-  const resolvedParams = await params;
-
-  const lang =
-    resolvedParams.lang in languages ? (resolvedParams.lang as Lang) : "en";
+const Page = () => {
+  // دیکشنری ترجمه
+  const dict = {
+    email: "Email",
+    password: "Password",
+    login: "Login",
+    rememberMe: "Remember me",
+    forgotPassword: "Forgot password?",
+    noAccount: "Don't have an account?",
+    register: "Register",
+    // ... بقیه کلیدهای مورد نیاز
+  };
 
   return (
-    <div
-      className="bg-cover bg-center bg-fixed"
-      style={{
-        backgroundImage: `url('/images/jpg/auth.jpeg')`,
-      }}
-    >
-     
-      <Login params={{ lang }} />
+    <div className="flex flex-row bg-cyan-950 h-screen w-full items-center justify-center">
+      <Login loginRoute="/api/auth/login" />
     </div>
   );
-}
+};
 
 export default Page;

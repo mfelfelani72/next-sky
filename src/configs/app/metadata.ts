@@ -18,7 +18,7 @@ import { getLocale, getSchemaLocale } from "@/configs/app/language";
 
 // Interfaces
 
-import { BaseMeta, PageMeta } from "@/Interfaces/meta";
+import { BaseMeta, PageMeta } from "@/interfaces/app/meta";
 
 // ---------- Config ----------
 const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost";
@@ -103,8 +103,6 @@ export async function generatePageMetadata(
       languages: {
         en: generateCanonicalUrl("en", pageKey),
         fa: generateCanonicalUrl("fa", pageKey),
-        ar: generateCanonicalUrl("ar", pageKey),
-        ja: generateCanonicalUrl("ja", pageKey),
       },
     },
 

@@ -26,7 +26,7 @@ try {
   } else {
     // Linux/Mac command - without cross-env
     console.log('Running Linux/Mac command...');
-    execSync('NEXT_PUBLIC_BASE_PORT=:3333 next dev --turbopack -p 3333', { 
+    execSync('NEXT_PUBLIC_BASE_PORT=:3000 next dev --turbopack -p 3000', { 
       stdio: 'inherit',
       shell: true 
     });

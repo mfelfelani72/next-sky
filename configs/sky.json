@@ -232,5 +232,8 @@
   "BASE_URL": {
     "dev": "http://localhost",
     "prod": "https://www.sky.ir"
-  }
+  },
+  "AUTH_SECRET":"sdf",
+  "DATABASE_URL":"sdf"
+  
 }

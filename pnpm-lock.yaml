@@ -57,6 +57,9 @@ importers:
       next:
         specifier: 16.3.0
         version: 16.3.0(@babel/core@7.29.7(supports-color@8.1.1))(@opentelemetry/api@1.9.1)(@types/node@26.1.2)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
+      next-auth-mfelfelani72:
+        specifier: ^0.0.23
+        version: 0.0.23(@babel/core@7.29.7(supports-color@8.1.1))(@opentelemetry/api@1.9.1)(@types/node@26.1.2)(@types/react@19.2.18)(debug@4.4.3(supports-color@8.1.1))(supports-color@8.1.1)(typescript@5.9.3)(use-sync-external-store@1.6.0(react@19.2.8))
       next-pwa:
         specifier: ^5.6.0
         version: 5.6.0(@babel/core@7.29.7(supports-color@8.1.1))(lightningcss@1.32.0)(next@16.3.0(@babel/core@7.29.7(supports-color@8.1.1))(@opentelemetry/api@1.9.1)(@types/node@26.1.2)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(postcss@8.5.25)(supports-color@8.1.1)(webpack@5.109.2(lightningcss@1.32.0)(postcss@8.5.25))
@@ -1371,6 +1374,40 @@ packages:
   '@swc/helpers@0.5.15':
     resolution: {integrity: sha512-JQ5TuMi45Owi4/BIMAJBoSQoOJu12oOk/gADqlcUL9JEdHB8vyjUSsxqeNXnmXHjYKMi2WcYtezGEEhqUI/E2g==}
 
+  '@t3-oss/env-core@0.13.11':
+    resolution: {integrity: sha512-sM7GYY+KL7H/Hl0BE0inWfk3nRHZOLhmVn7sHGxaZt9FAR6KqREXAE+6TqKfiavfXmpRxO/OZ2QgKRd+oiBYRQ==}
+    peerDependencies:
+      arktype: ^2.1.0
+      typescript: '>=5.0.0'
+      valibot: ^1.0.0-beta.7 || ^1.0.0
+      zod: ^3.24.0 || ^4.0.0
+    peerDependenciesMeta:
+      arktype:
+        optional: true
+      typescript:
+        optional: true
+      valibot:
+        optional: true
+      zod:
+        optional: true
+
+  '@t3-oss/env-nextjs@0.13.11':
+    resolution: {integrity: sha512-NC+3j7YWgpzdFu1t5y/8wqibTK0lm5RS4bjXA1n8uwik3wIR4iZM4Fa+U2BaMa5k3Qk8RZiYhoAIX0WogmGkzg==}
+    peerDependencies:
+      arktype: ^2.1.0
+      typescript: '>=5.0.0'
+      valibot: ^1.0.0-beta.7 || ^1.0.0
+      zod: ^3.24.0 || ^4.0.0
+    peerDependenciesMeta:
+      arktype:
+        optional: true
+      typescript:
+        optional: true
+      valibot:
+        optional: true
+      zod:
+        optional: true
+
   '@tailwindcss/node@4.3.3':
     resolution: {integrity: sha512-/T8IKEsf9VTU6tLjgC7+sv2mOPtQxzE2jMw7u4Tt40Tx+QSZxpzh95/H6cMKoja9XuW7iMdLJYBB0o9G1CaAgg==}
 
@@ -2113,6 +2150,10 @@ packages:
   cookie@0.7.2:
     resolution: {integrity: sha512-yki5XnKuf750l50uGTllt6kKILY4nQ1eNIQatoXEByZ5dWgnKqbnqmTrBE5B4N7lrMJKQ2ytWMiTO2o0v6Ew/w==}
     engines: {node: '>= 0.6'}
+
+  cookie@2.0.1:
+    resolution: {integrity: sha512-yuToqVvRrj6pfDXREyQAAv8SkAEk/8GS3jQRTiUMm66TVtBYmqQeoEjL2Lmq8Rpo6271vH76InTChTitEAm65w==}
+    engines: {node: '>=22'}
 
   core-js-compat@3.49.0:
     resolution: {integrity: sha512-VQXt1jr9cBz03b331DFDCCP90b3fanciLkgiOoy8SBHy06gNf+vQ1A3WFLqG7I8TipYIKeYK9wxd0tUrvHcOZA==}
@@ -3259,6 +3300,9 @@ packages:
 
   neo-async@2.6.2:
     resolution: {integrity: sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw==}
+
+  next-auth-mfelfelani72@0.0.23:
+    resolution: {integrity: sha512-oEY8X/IfRUbMZSDrI7H7VeAiyUa3zW7CI8VyLG1j4rbdaH8oczmfJNuimDlZOYgsXbRjotgd+9jXRwf+54U4UA==}
 
   next-line@1.1.0:
     resolution: {integrity: sha512-+I10J3wKNoKddNxn0CNpoZ3eTZuqxjNM3b1GImVx22+ePI+Y15P8g/j3WsbP0fhzzrFzrtjOAoq5NCCucswXOQ==}
@@ -5423,6 +5467,18 @@ snapshots:
     dependencies:
       tslib: 2.8.1
 
+  '@t3-oss/env-core@0.13.11(typescript@5.9.3)(zod@4.4.3)':
+    optionalDependencies:
+      typescript: 5.9.3
+      zod: 4.4.3
+
+  '@t3-oss/env-nextjs@0.13.11(typescript@5.9.3)(zod@4.4.3)':
+    dependencies:
+      '@t3-oss/env-core': 0.13.11(typescript@5.9.3)(zod@4.4.3)
+    optionalDependencies:
+      typescript: 5.9.3
+      zod: 4.4.3
+
   '@tailwindcss/node@4.3.3':
     dependencies:
       '@jridgewell/remapping': 2.3.5
@@ -6236,6 +6292,8 @@ snapshots:
 
   cookie@0.7.2: {}
 
+  cookie@2.0.1: {}
+
   core-js-compat@3.49.0:
     dependencies:
       browserslist: 4.28.1
@@ -6417,6 +6475,48 @@ snapshots:
       readable-stream: 3.6.2
       relative-microtime: 2.0.0
       require-in-the-middle: 8.0.1(supports-color@7.2.0)
+      semver: 7.8.5
+      shallow-clone-shim: 2.0.0
+      source-map: 0.8.0
+      sql-summary: 1.0.1
+      stream-chopper: 3.0.1
+      unicode-byte-truncate: 1.0.0
+    transitivePeerDependencies:
+      - supports-color
+
+  elastic-apm-node@4.18.0(supports-color@8.1.1):
+    dependencies:
+      '@elastic/ecs-pino-format': 1.5.0
+      '@opentelemetry/api': 1.9.1
+      '@opentelemetry/core': 2.10.0(@opentelemetry/api@1.9.1)
+      '@opentelemetry/sdk-metrics': 2.10.0(@opentelemetry/api@1.9.1)
+      after-all-results: 2.0.0
+      agentkeepalive: 4.6.0
+      async-value-promise: 1.1.1
+      basic-auth: 2.0.1
+      breadth-filter: 2.0.0
+      cookie: 0.7.2
+      core-util-is: 1.0.3
+      end-of-stream: 1.4.5
+      error-callsites: 2.0.4
+      error-stack-parser: 2.1.4
+      escape-string-regexp: 4.0.0
+      fast-safe-stringify: 2.1.1
+      fast-stream-to-buffer: 1.0.0
+      http-headers: 3.0.2
+      import-in-the-middle: 1.15.0
+      json-bigint: 1.0.0
+      lru-cache: 10.2.0
+      measured-reporting: 1.51.1
+      module-details-from-path: 1.0.4
+      monitor-event-loop-delay: 1.0.0
+      object-filter-sequence: 1.0.0
+      object-identity-map: 1.0.2
+      original-url: 1.2.3
+      pino: 8.21.0
+      readable-stream: 3.6.2
+      relative-microtime: 2.0.0
+      require-in-the-middle: 8.0.1(supports-color@8.1.1)
       semver: 7.8.5
       shallow-clone-shim: 2.0.0
       source-map: 0.8.0
@@ -6935,6 +7035,34 @@ snapshots:
       clsx: 2.1.1
       critters: 0.0.25
       elastic-apm-node: 4.18.0(supports-color@7.2.0)
+      js-cookie: 3.0.8
+      motion: 12.43.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      next: 15.5.4(@babel/core@7.29.7(supports-color@8.1.1))(@opentelemetry/api@1.9.1)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      react: 19.1.0
+      react-dom: 19.1.0(react@19.1.0)
+      swr: 2.5.0(react@19.1.0)
+      tailwind-merge: 3.6.0
+      zustand: 5.0.14(@types/react@19.2.18)(react@19.1.0)(use-sync-external-store@1.6.0(react@19.2.8))
+    transitivePeerDependencies:
+      - '@babel/core'
+      - '@emotion/is-prop-valid'
+      - '@opentelemetry/api'
+      - '@playwright/test'
+      - '@types/react'
+      - babel-plugin-macros
+      - babel-plugin-react-compiler
+      - debug
+      - immer
+      - sass
+      - supports-color
+      - use-sync-external-store
+
+  forma-ui@0.0.27(@babel/core@7.29.7(supports-color@8.1.1))(@opentelemetry/api@1.9.1)(@types/react@19.2.18)(debug@4.4.3(supports-color@8.1.1))(supports-color@8.1.1)(use-sync-external-store@1.6.0(react@19.2.8)):
+    dependencies:
+      axios: 1.19.0(debug@4.4.3(supports-color@8.1.1))(supports-color@8.1.1)
+      clsx: 2.1.1
+      critters: 0.0.25
+      elastic-apm-node: 4.18.0(supports-color@8.1.1)
       js-cookie: 3.0.8
       motion: 12.43.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       next: 15.5.4(@babel/core@7.29.7(supports-color@8.1.1))(@opentelemetry/api@1.9.1)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
@@ -7602,6 +7730,36 @@ snapshots:
 
   neo-async@2.6.2: {}
 
+  next-auth-mfelfelani72@0.0.23(@babel/core@7.29.7(supports-color@8.1.1))(@opentelemetry/api@1.9.1)(@types/node@26.1.2)(@types/react@19.2.18)(debug@4.4.3(supports-color@8.1.1))(supports-color@8.1.1)(typescript@5.9.3)(use-sync-external-store@1.6.0(react@19.2.8)):
+    dependencies:
+      '@t3-oss/env-nextjs': 0.13.11(typescript@5.9.3)(zod@4.4.3)
+      clsx: 2.1.1
+      cookie: 2.0.1
+      forma-ui: 0.0.27(@babel/core@7.29.7(supports-color@8.1.1))(@opentelemetry/api@1.9.1)(@types/react@19.2.18)(debug@4.4.3(supports-color@8.1.1))(supports-color@8.1.1)(use-sync-external-store@1.6.0(react@19.2.8))
+      next: 16.3.0(@babel/core@7.29.7(supports-color@8.1.1))(@opentelemetry/api@1.9.1)(@types/node@26.1.2)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
+      react: 19.2.8
+      react-dom: 19.2.8(react@19.2.8)
+      tailwind-merge: 3.6.0
+      zod: 4.4.3
+      zustand: 5.0.14(@types/react@19.2.18)(react@19.2.8)(use-sync-external-store@1.6.0(react@19.2.8))
+    transitivePeerDependencies:
+      - '@babel/core'
+      - '@emotion/is-prop-valid'
+      - '@opentelemetry/api'
+      - '@playwright/test'
+      - '@types/node'
+      - '@types/react'
+      - arktype
+      - babel-plugin-macros
+      - babel-plugin-react-compiler
+      - debug
+      - immer
+      - sass
+      - supports-color
+      - typescript
+      - use-sync-external-store
+      - valibot
+
   next-line@1.1.0: {}
 
   next-pwa@5.6.0(@babel/core@7.29.7(supports-color@8.1.1))(lightningcss@1.32.0)(next@16.3.0(@babel/core@7.29.7(supports-color@8.1.1))(@opentelemetry/api@1.9.1)(@types/node@26.1.2)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(postcss@8.5.25)(supports-color@8.1.1)(webpack@5.109.2(lightningcss@1.32.0)(postcss@8.5.25)):
@@ -7971,6 +8129,13 @@ snapshots:
   require-in-the-middle@8.0.1(supports-color@7.2.0):
     dependencies:
       debug: 4.4.3(supports-color@7.2.0)
+      module-details-from-path: 1.0.4
+    transitivePeerDependencies:
+      - supports-color
+
+  require-in-the-middle@8.0.1(supports-color@8.1.1):
+    dependencies:
+      debug: 4.4.3(supports-color@8.1.1)
       module-details-from-path: 1.0.4
     transitivePeerDependencies:
       - supports-color

@@ -20,12 +20,12 @@ export default async function LangLayout({
 }: LangLayoutProps) {
   return (
     <>
-      <div className="absolute inset-0">
+      {/* <div className="absolute inset-0">
         <div className="flex flex-row backdrop-blur-xs w-full h-14 items-center justify-between px-4 mdd:px-20 xll:px-30  border border-b-Neutral-400 relative z-900">
          <div className="text-Neutral-100 font-semibold text-xl">Skytech mission</div>
           <LanguageSwitcher />
         </div>
-      </div>
+      </div> */}
       {children}
     </>
   );
