@@ -11,7 +11,7 @@ import { headers } from "next/headers";
 // Functions
 
 import { buildBreadcrumbs } from "@/libraries/app/breadcrumb";
-import { createTranslator } from "@/libraries/app/translation";
+import { createTranslator } from "forma-li"
 
 // Interfaces
 

@@ -12,7 +12,7 @@ import LanguageSwitcher from "@/components/base/LanguageSwitcher";
 
 // Interfaces
 
-import { LangLayoutProps } from "@/interfaces/app/global";
+import { LangLayoutProps } from "forma-li";
 
 export default async function LangLayout({
   children,

@@ -7,7 +7,7 @@
  */
 import { createMetadata } from "forma-li";
 
-import { createTranslator } from "@/libraries/app/translation";
+import { createTranslator } from "forma-li";
 
 // Interfaces
 

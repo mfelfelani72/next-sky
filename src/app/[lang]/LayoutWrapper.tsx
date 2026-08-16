@@ -14,7 +14,7 @@ import { useEffect, useState } from "react";
 
 // Interfaces
 
-import { LangWrapperProps } from "@/interfaces/app/global";
+import { LangWrapperProps } from "forma-li";
 
 // Hooks
 
@@ -23,6 +23,7 @@ import { useServiceWorker } from "@/hooks/app/useServiceWorker";
 // Zustand
 
 import { useLangStore } from "forma-li";
+import { useTranslation } from "@/hooks/app/useTranslation";
 
 export default function LayoutWrapper({
   langFromUrl,
@@ -50,9 +51,13 @@ export default function LayoutWrapper({
       setLang(langFromUrl);
       triggerRefresh?.();
     }
+
     setLoaded(true);
   }, [langFromUrl, setLang, lang, triggerRefresh]);
 
+  useEffect(() => {
+    if (lang == langFromUrl) console.log("App Language is : ", lang);
+  }, []);
   if (!loaded) return null;
 
   return (

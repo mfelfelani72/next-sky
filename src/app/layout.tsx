@@ -9,6 +9,7 @@
 import type { ReactNode } from "react";
 import { Suspense } from "react";
 import type { Metadata, Viewport } from "next";
+import { cookies } from "next/headers";
 
 // Constants
 
@@ -27,7 +28,7 @@ import { satoshi, iranSans } from "@/libraries/app/fonts";
 
 import "./globals.css";
 
-import { getCookieAppTheme, getCookieAppLang } from "@/utilities/app/cookieUtils";
+import { getCookieAppTheme, getCookieAppLang } from "forma-li"
 
 const capitalLicenseName =
   (process.env.NEXT_PUBLIC_LICENSE_NAME || "sky")
@@ -101,8 +102,10 @@ export default async function RootLayout({
 }) {
   //  dark and light
 
-  const theme = await getCookieAppTheme();
-  const lang = await getCookieAppLang();
+  const cookieStore = await cookies();
+
+  const theme = await getCookieAppTheme(cookieStore);
+  const lang = await getCookieAppLang(cookieStore);
 
   return (
     <html

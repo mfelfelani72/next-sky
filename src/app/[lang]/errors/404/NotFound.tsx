@@ -16,7 +16,7 @@ import LocalizedLink from "@/components/base/LocalizedLink";
 
 // Functions
 
-import { createTranslator } from "@/libraries/app/translation";
+import { createTranslator } from "forma-li"
 
 // Interfaces
 

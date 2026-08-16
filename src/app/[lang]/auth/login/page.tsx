@@ -8,10 +8,6 @@ import { Login } from "next-auth-mfelfelani72";
 
 import { createMetadata } from "forma-li";
 
-// Configures
-
-import { languages, type Lang } from "@/configs/app/language";
-
 export async function generateMetadata({
   params,
 }: {
@@ -20,20 +16,15 @@ export async function generateMetadata({
   return createMetadata(await params, "login");
 }
 
-export default async function Page({
-  params,
-}: {
-  params: Promise<{ lang: string }>;
-}) {
-  const resolvedParams = await params;
-  const lang =
-    resolvedParams.lang in languages ? (resolvedParams.lang as Lang) : "en";
-
+export default async function Page() {
   return (
-    <Login
-      layout="twoColumn"
-      theme="default"
-      className="w-full max-w-none px-0"
-    />
+    <>
+     
+      <Login
+        layout="twoColumn"
+        theme="default"
+        className="w-full max-w-none px-0"
+      />
+    </>
   );
 }

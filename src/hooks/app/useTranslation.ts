@@ -17,3 +17,4 @@ import { getDictionary } from "@/locale";
 setGetDictionary(getDictionary as any);
 
 export const useTranslation = useTranslationOriginal;
+

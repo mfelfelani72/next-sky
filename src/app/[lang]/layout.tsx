@@ -25,7 +25,7 @@ import { getDictionary } from "@/locale";
 
 // Interfaces
 
-import { LangLayoutProps } from "@/interfaces/app/global";
+import { LangLayoutProps } from "forma-li";
 import { languages, type Lang } from "@/configs/app/language";
 
 // Functions
