@@ -15,7 +15,7 @@ import Image from "@/components/base/Image";
 
 // Functions
 
-import { cn } from "@/libraries/app/cn";
+import { cn } from "forma-li";
 
 // Interfaces
 export interface BrandCardProps {

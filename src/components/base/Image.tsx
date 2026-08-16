@@ -18,7 +18,7 @@ import { nextImageLoader } from "@/utilities/app/nextImageLoader";
 
 import * as motion from "motion/react-client";
 import { AnimatePresence } from "motion/react";
-import { cn } from "@/libraries/app/cn";
+import { cn } from "forma-li";
 
 // Hooks
 

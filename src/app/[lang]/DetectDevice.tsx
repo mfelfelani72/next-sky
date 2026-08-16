@@ -14,7 +14,7 @@ import Cookies from "js-cookie";
 
 // Hooks
 
-import useDevice from "@/hooks/app/useDevice";
+import { useDevice } from "forma-li";
 
 // Zustand
 
@@ -32,10 +32,10 @@ const DetectDevice = () => {
     const deviceType = isMobile
       ? "mobile"
       : isDesktop
-      ? "desktop"
-      : isIpad
-      ? "ipad"
-      : "unknown";
+        ? "desktop"
+        : isIpad
+          ? "ipad"
+          : "unknown";
 
     if (deviceType !== "unknown") {
       const savedDevice = Cookies.get("device-type");

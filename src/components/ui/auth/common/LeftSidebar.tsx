@@ -14,7 +14,7 @@ import { useRouter } from "next/navigation";
 import { ArrowLeft } from "lucide-react";
 
 // Functions
-import { cn } from "@/libraries/app/cn";
+import { cn } from "forma-li";
 
 // Interface
 interface LeftSidebarProps {

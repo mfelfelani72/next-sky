@@ -11,7 +11,7 @@ import { useTranslation } from "@/hooks/app/useTranslation";
 
 // Functions
 
-import { cn } from "@/libraries/app/cn";
+import { cn } from "forma-li";
 
 // Interfaces
 

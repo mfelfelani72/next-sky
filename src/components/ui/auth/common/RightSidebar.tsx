@@ -12,7 +12,7 @@ import BrandCard from "@/components/ui/auth/common/BrandCard";
 
 // Functions
 
-import { cn } from "@/libraries/app/cn";
+import { cn } from "forma-li";
 interface RightSidebarProps {
   className?: string;
   children?: React.ReactNode;
