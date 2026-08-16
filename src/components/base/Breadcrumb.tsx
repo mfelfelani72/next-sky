@@ -64,7 +64,7 @@ import { buildBreadcrumbs } from "@/libs/breadcrumb";
 
 // Zustand
 
-import { useLangStore } from "@/stores/LangStore";
+import { useLangStore } from "forma-li";
 
 export default function Breadcrumb() {
   // Hooks

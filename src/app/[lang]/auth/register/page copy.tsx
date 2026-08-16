@@ -8,7 +8,7 @@
 
 // Components
 
-import ForgotPassword from "@/components/ui/auth/common/forgotPassword/ForgotPasswordLanding";
+import Register from "@/components/ui/auth/common/register/RegisterLanding";
 // Functions
 
 import { createMetadata } from "forma-li";
@@ -23,7 +23,7 @@ export async function generateMetadata({
 }: {
   params: Promise<{ lang: string }>;
 }) {
-  return createMetadata(await params, "forgotPassword");
+  return createMetadata(await params, "register");
 }
 
 async function Page({ params }: { params: Promise<{ lang: string }> }) {
@@ -38,7 +38,7 @@ async function Page({ params }: { params: Promise<{ lang: string }> }) {
         backgroundImage: `url('/images/jpg/auth.jpeg')`,
       }}
     >
-      <ForgotPassword params={{ lang }} />
+      <Register params={{ lang }} />
     </div>
   );
 }

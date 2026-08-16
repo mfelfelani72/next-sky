@@ -11,7 +11,7 @@
 import Login from "@/components/ui/auth/common/login/LoginLanding";
 // Functions
 
-import { createMetadata } from "@/utilities/app/metadataHelper";
+import { createMetadata } from "forma-li";
 
 // Interfaces
 

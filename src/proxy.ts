@@ -11,7 +11,7 @@ import type { NextRequest } from "next/server";
 
 // Functions
 
-import { detectDeviceFromUA } from "@/libraries/app/detectDeviceFromUA";
+import { detectDeviceFromUA } from "forma-li"
 
 export const proxy = async (request: NextRequest) => {
   const url = request.nextUrl.clone();

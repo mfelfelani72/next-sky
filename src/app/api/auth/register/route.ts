@@ -7,6 +7,6 @@
  * @Description: Login API Route
  */
 
-import { loginHandler } from "next-auth-mfelfelani72";
+import { registerHandler } from "next-auth-mfelfelani72";
 
-export const POST = loginHandler(`${process.env.NEXT_PUBLIC_API_URL}/login`);
+export const POST = registerHandler(`${process.env.NEXT_PUBLIC_API_URL}/register`);

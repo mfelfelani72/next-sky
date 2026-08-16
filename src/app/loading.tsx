@@ -21,7 +21,7 @@ interface LoadingProps {
 
 // Zustand
 
-import { useLangStore } from "@/stores/LangStore";
+import { useLangStore } from "forma-li";
 import { useEffect, useState } from "react";
 
 export default function Loading({ className }: LoadingProps) {

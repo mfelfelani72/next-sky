@@ -1,11 +1,7 @@
-/**
- * @Author: Mohammad Felfelani
- * @Email: mfelfelani72@gmail.com
- * @Team:
- * @Date: 2025-11-29 06:58:21
- * @Description:
- */
+// locale/index.ts
 import { cache } from "react";
+import { setupMetadata } from "forma-li";
+import { setGetDictionary } from "forma-li";
 import en from "./en";
 import fa from "./fa";
 
@@ -16,3 +12,6 @@ export type Lang = keyof typeof dictionaries;
 export const getDictionary = cache((lang: Lang = "en") => {
   return dictionaries[lang];
 });
+
+setupMetadata({}, getDictionary as any);
+setGetDictionary(getDictionary as any);

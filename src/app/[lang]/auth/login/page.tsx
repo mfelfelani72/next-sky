@@ -1,24 +1,39 @@
 import React from "react";
+
+// Components
+
 import { Login } from "next-auth-mfelfelani72";
 
-const Page = () => {
-  // دیکشنری ترجمه
-  const dict = {
-    email: "Email",
-    password: "Password",
-    login: "Login",
-    rememberMe: "Remember me",
-    forgotPassword: "Forgot password?",
-    noAccount: "Don't have an account?",
-    register: "Register",
-    // ... بقیه کلیدهای مورد نیاز
-  };
+// Functions
+
+import { createMetadata } from "forma-li";
+
+// Configures
+
+import { languages, type Lang } from "@/configs/app/language";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ lang: string }>;
+}) {
+  return createMetadata(await params, "login");
+}
+
+export default async function Page({
+  params,
+}: {
+  params: Promise<{ lang: string }>;
+}) {
+  const resolvedParams = await params;
+  const lang =
+    resolvedParams.lang in languages ? (resolvedParams.lang as Lang) : "en";
 
   return (
-    <div className="flex flex-row bg-cyan-950 h-screen w-full items-center justify-center">
-      <Login loginRoute="/api/auth/login" />
-    </div>
+    <Login
+      layout="twoColumn"
+      theme="default"
+      className="w-full max-w-none px-0"
+    />
   );
-};
-
-export default Page;
+}

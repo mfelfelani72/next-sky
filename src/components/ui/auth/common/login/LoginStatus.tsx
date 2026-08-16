@@ -25,7 +25,7 @@ import { isLoginClient } from "@/libs/isLoginClient";
 
 // Zustand
 
-import { useLangStore } from "@/stores/LangStore";
+import { useLangStore } from "forma-li";
 import { useUserStore } from "@/stores/UserStore";
 
 const LoginStatus = () => {

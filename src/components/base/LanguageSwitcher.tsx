@@ -17,7 +17,7 @@ import { LanguageIcon } from "forma-ui";
 
 // Zustand
 
-import { useLangStore } from "@/stores/LangStore";
+import { useLangStore } from "forma-li";
 
 // Interfaces
 

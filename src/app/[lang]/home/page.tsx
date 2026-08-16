@@ -5,7 +5,7 @@
  * @Date: 2025-12-13 14:26:00
  * @Description:
  */
-import { createMetadata } from "@/utilities/app/metadataHelper";
+import { createMetadata } from "forma-li";
 
 import { createTranslator } from "@/libraries/app/translation";
 

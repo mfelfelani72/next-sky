@@ -22,7 +22,7 @@ import { useServiceWorker } from "@/hooks/app/useServiceWorker";
 
 // Zustand
 
-import { useLangStore } from "@/LangStore";
+import { useLangStore } from "forma-li";
 
 export default function LayoutWrapper({
   langFromUrl,
