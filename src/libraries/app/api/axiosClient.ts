@@ -10,7 +10,7 @@ import axios from "axios";
 
 // Functions
 
-import { getCookie, getCookieServer } from "@/utilities/app/cookieUtils";
+import { getCookie, getCookieServer } from "forma-li";
 
 // Constants
 

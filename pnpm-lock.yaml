@@ -34,8 +34,8 @@ importers:
         specifier: ^8.6.0
         version: 8.6.0(react@19.2.8)
       forma-li:
-        specifier: ^1.0.21
-        version: 1.0.21(@types/react@19.2.18)(debug@4.4.3(supports-color@8.1.1))(next@16.3.0(@babel/core@7.29.7(supports-color@8.1.1))(@opentelemetry/api@1.9.1)(@types/node@26.1.2)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(swr@2.5.0(react@19.2.8))(use-sync-external-store@1.6.0(react@19.2.8))
+        specifier: ^1.0.22
+        version: 1.0.22(@types/react@19.2.18)(debug@4.4.3(supports-color@8.1.1))(next@16.3.0(@babel/core@7.29.7(supports-color@8.1.1))(@opentelemetry/api@1.9.1)(@types/node@26.1.2)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(swr@2.5.0(react@19.2.8))(use-sync-external-store@1.6.0(react@19.2.8))
       forma-ui:
         specifier: ^0.0.27
         version: 0.0.27(@babel/core@7.29.7(supports-color@8.1.1))(@opentelemetry/api@1.9.1)(@types/react@19.2.18)(debug@4.4.3(supports-color@8.1.1))(supports-color@8.1.1)(use-sync-external-store@1.6.0(react@19.2.8))
@@ -61,8 +61,8 @@ importers:
         specifier: 16.3.0
         version: 16.3.0(@babel/core@7.29.7(supports-color@8.1.1))(@opentelemetry/api@1.9.1)(@types/node@26.1.2)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
       next-auth-mfelfelani72:
-        specifier: ^0.0.27
-        version: 0.0.27(@babel/core@7.29.7(supports-color@8.1.1))(@opentelemetry/api@1.9.1)(@types/node@26.1.2)(@types/react@19.2.18)(debug@4.4.3(supports-color@8.1.1))(supports-color@8.1.1)(swr@2.5.0(react@19.2.8))(typescript@5.9.3)(use-sync-external-store@1.6.0(react@19.2.8))
+        specifier: ^0.0.29
+        version: 0.0.29(@babel/core@7.29.7(supports-color@8.1.1))(@opentelemetry/api@1.9.1)(@types/node@26.1.2)(@types/react@19.2.18)(debug@4.4.3(supports-color@8.1.1))(supports-color@8.1.1)(swr@2.5.0(react@19.2.8))(typescript@5.9.3)(use-sync-external-store@1.6.0(react@19.2.8))
       next-pwa:
         specifier: ^5.6.0
         version: 5.6.0(@babel/core@7.29.7(supports-color@8.1.1))(lightningcss@1.32.0)(next@16.3.0(@babel/core@7.29.7(supports-color@8.1.1))(@opentelemetry/api@1.9.1)(@types/node@26.1.2)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(postcss@8.5.25)(supports-color@8.1.1)(webpack@5.109.2(lightningcss@1.32.0)(postcss@8.5.25))
@@ -2605,8 +2605,8 @@ packages:
     resolution: {integrity: sha512-vKatAh4SlVfgbv+YtmhiRjhEMJsYpsG1Y2rMQtR+SVSbytsSD1YGzDIcrAJmdFec88u/+VoGmxnl+80gL1tRCQ==}
     engines: {node: '>= 6'}
 
-  forma-li@1.0.21:
-    resolution: {integrity: sha512-kIiwfNoTpusueFiNB7IevCltEqAsNj7VJUFkZNZVIRmneZM/xtNtvr467S7xxrjQew2IXUdVcY4LCTTiQ6i+LA==}
+  forma-li@1.0.22:
+    resolution: {integrity: sha512-E6zYHp4xoPTi8JJf5yT0bLAuvW6dEeoqaz7ovQJqNwXjQzjwJ61Jnyw6q5yc9YM+M8mwxXsFpnrpEoxGeMweGw==}
     peerDependencies:
       next: '>=13.0.0'
       react: '>=18.0.0'
@@ -3354,8 +3354,8 @@ packages:
   neo-async@2.6.2:
     resolution: {integrity: sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw==}
 
-  next-auth-mfelfelani72@0.0.27:
-    resolution: {integrity: sha512-DWUdu3aXSJqMlTuw4Nq/dDZ1TMcfowyoAnvfFh4sODXyc1v8ExBkyyJMaIIAfntxMY0aqg1G452zQ71NRISXhw==}
+  next-auth-mfelfelani72@0.0.29:
+    resolution: {integrity: sha512-HGLNBK7v0Wihuk+1L3YQSC+jaLCCNtAqWd6mg1y6WUeGeiiZDHN+gDKwEC+G1bHnVCS3J21kZi7EEOJFAyKCNg==}
 
   next-line@1.1.0:
     resolution: {integrity: sha512-+I10J3wKNoKddNxn0CNpoZ3eTZuqxjNM3b1GImVx22+ePI+Y15P8g/j3WsbP0fhzzrFzrtjOAoq5NCCucswXOQ==}
@@ -6948,7 +6948,7 @@ snapshots:
       hasown: 2.0.4
       mime-types: 2.1.35
 
-  forma-li@1.0.21(@types/react@19.2.18)(debug@4.4.3(supports-color@8.1.1))(next@16.3.0(@babel/core@7.29.7(supports-color@8.1.1))(@opentelemetry/api@1.9.1)(@types/node@26.1.2)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(swr@2.5.0(react@19.2.8))(use-sync-external-store@1.6.0(react@19.2.8)):
+  forma-li@1.0.22(@types/react@19.2.18)(debug@4.4.3(supports-color@8.1.1))(next@16.3.0(@babel/core@7.29.7(supports-color@8.1.1))(@opentelemetry/api@1.9.1)(@types/node@26.1.2)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(swr@2.5.0(react@19.2.8))(use-sync-external-store@1.6.0(react@19.2.8)):
     dependencies:
       axios: 1.19.0(debug@4.4.3(supports-color@8.1.1))(supports-color@8.1.1)
       clsx: 2.1.1
@@ -7659,13 +7659,13 @@ snapshots:
 
   neo-async@2.6.2: {}
 
-  next-auth-mfelfelani72@0.0.27(@babel/core@7.29.7(supports-color@8.1.1))(@opentelemetry/api@1.9.1)(@types/node@26.1.2)(@types/react@19.2.18)(debug@4.4.3(supports-color@8.1.1))(supports-color@8.1.1)(swr@2.5.0(react@19.2.8))(typescript@5.9.3)(use-sync-external-store@1.6.0(react@19.2.8)):
+  next-auth-mfelfelani72@0.0.29(@babel/core@7.29.7(supports-color@8.1.1))(@opentelemetry/api@1.9.1)(@types/node@26.1.2)(@types/react@19.2.18)(debug@4.4.3(supports-color@8.1.1))(supports-color@8.1.1)(swr@2.5.0(react@19.2.8))(typescript@5.9.3)(use-sync-external-store@1.6.0(react@19.2.8)):
     dependencies:
       '@t3-oss/env-nextjs': 0.13.11(typescript@5.9.3)(zod@4.4.3)
       axios: 1.19.0(debug@4.4.3(supports-color@8.1.1))(supports-color@8.1.1)
       clsx: 2.1.1
       cookie: 2.0.1
-      forma-li: 1.0.21(@types/react@19.2.18)(debug@4.4.3(supports-color@8.1.1))(next@16.3.0(@babel/core@7.29.7(supports-color@8.1.1))(@opentelemetry/api@1.9.1)(@types/node@26.1.2)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(swr@2.5.0(react@19.2.8))(use-sync-external-store@1.6.0(react@19.2.8))
+      forma-li: 1.0.22(@types/react@19.2.18)(debug@4.4.3(supports-color@8.1.1))(next@16.3.0(@babel/core@7.29.7(supports-color@8.1.1))(@opentelemetry/api@1.9.1)(@types/node@26.1.2)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@8.1.1)(swr@2.5.0(react@19.2.8))(use-sync-external-store@1.6.0(react@19.2.8))
       forma-ui: 0.0.27(@babel/core@7.29.7(supports-color@8.1.1))(@opentelemetry/api@1.9.1)(@types/react@19.2.18)(debug@4.4.3(supports-color@8.1.1))(supports-color@8.1.1)(use-sync-external-store@1.6.0(react@19.2.8))
       js-cookie: 3.0.8
       lucide-react: 1.31.0(react@19.2.8)

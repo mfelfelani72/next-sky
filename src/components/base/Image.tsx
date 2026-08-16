@@ -12,7 +12,7 @@ import { useState, useEffect, useRef } from "react";
 // Components
 
 import NextImage, { ImageProps } from "next/image";
-import { nextImageLoader } from "@/utilities/app/nextImageLoader";
+import { imageLoader } from "forma-li";
 
 // Functions
 
@@ -192,7 +192,7 @@ const ImageWithLoading = ({
         {...props}
         src={actualSrc}
         sizes={computedSizes}
-        loader={nextImageLoader}
+        loader={imageLoader}
         className={cn(
           "transition-opacity duration-500 ease-out",
           isLoading || (hasError && fallbackElement)
@@ -221,7 +221,7 @@ const ImageWithLoading = ({
 
 const Image = ({ enableLoading = true, ...props }: CustomImageProps) => {
   if (!enableLoading) {
-    return <NextImage {...props} loader={nextImageLoader} />;
+    return <NextImage {...props} loader={imageLoader} />;
   }
   return <ImageWithLoading {...props} />;
 };
