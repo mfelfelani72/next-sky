@@ -61,8 +61,8 @@ importers:
         specifier: 16.3.0
         version: 16.3.0(@babel/core@7.29.7(supports-color@8.1.1))(@opentelemetry/api@1.9.1)(@types/node@26.1.2)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
       next-auth-mfelfelani72:
-        specifier: ^0.0.29
-        version: 0.0.29(@babel/core@7.29.7(supports-color@8.1.1))(@opentelemetry/api@1.9.1)(@types/node@26.1.2)(@types/react@19.2.18)(debug@4.4.3(supports-color@8.1.1))(supports-color@8.1.1)(swr@2.5.0(react@19.2.8))(typescript@5.9.3)(use-sync-external-store@1.6.0(react@19.2.8))
+        specifier: ^0.0.30
+        version: 0.0.30(@babel/core@7.29.7(supports-color@8.1.1))(@opentelemetry/api@1.9.1)(@types/node@26.1.2)(@types/react@19.2.18)(debug@4.4.3(supports-color@8.1.1))(supports-color@8.1.1)(swr@2.5.0(react@19.2.8))(use-sync-external-store@1.6.0(react@19.2.8))
       next-pwa:
         specifier: ^5.6.0
         version: 5.6.0(@babel/core@7.29.7(supports-color@8.1.1))(lightningcss@1.32.0)(next@16.3.0(@babel/core@7.29.7(supports-color@8.1.1))(@opentelemetry/api@1.9.1)(@types/node@26.1.2)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(postcss@8.5.25)(supports-color@8.1.1)(webpack@5.109.2(lightningcss@1.32.0)(postcss@8.5.25))
@@ -1376,40 +1376,6 @@ packages:
 
   '@swc/helpers@0.5.15':
     resolution: {integrity: sha512-JQ5TuMi45Owi4/BIMAJBoSQoOJu12oOk/gADqlcUL9JEdHB8vyjUSsxqeNXnmXHjYKMi2WcYtezGEEhqUI/E2g==}
-
-  '@t3-oss/env-core@0.13.11':
-    resolution: {integrity: sha512-sM7GYY+KL7H/Hl0BE0inWfk3nRHZOLhmVn7sHGxaZt9FAR6KqREXAE+6TqKfiavfXmpRxO/OZ2QgKRd+oiBYRQ==}
-    peerDependencies:
-      arktype: ^2.1.0
-      typescript: '>=5.0.0'
-      valibot: ^1.0.0-beta.7 || ^1.0.0
-      zod: ^3.24.0 || ^4.0.0
-    peerDependenciesMeta:
-      arktype:
-        optional: true
-      typescript:
-        optional: true
-      valibot:
-        optional: true
-      zod:
-        optional: true
-
-  '@t3-oss/env-nextjs@0.13.11':
-    resolution: {integrity: sha512-NC+3j7YWgpzdFu1t5y/8wqibTK0lm5RS4bjXA1n8uwik3wIR4iZM4Fa+U2BaMa5k3Qk8RZiYhoAIX0WogmGkzg==}
-    peerDependencies:
-      arktype: ^2.1.0
-      typescript: '>=5.0.0'
-      valibot: ^1.0.0-beta.7 || ^1.0.0
-      zod: ^3.24.0 || ^4.0.0
-    peerDependenciesMeta:
-      arktype:
-        optional: true
-      typescript:
-        optional: true
-      valibot:
-        optional: true
-      zod:
-        optional: true
 
   '@tailwindcss/node@4.3.3':
     resolution: {integrity: sha512-/T8IKEsf9VTU6tLjgC7+sv2mOPtQxzE2jMw7u4Tt40Tx+QSZxpzh95/H6cMKoja9XuW7iMdLJYBB0o9G1CaAgg==}
@@ -3354,8 +3320,8 @@ packages:
   neo-async@2.6.2:
     resolution: {integrity: sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw==}
 
-  next-auth-mfelfelani72@0.0.29:
-    resolution: {integrity: sha512-HGLNBK7v0Wihuk+1L3YQSC+jaLCCNtAqWd6mg1y6WUeGeiiZDHN+gDKwEC+G1bHnVCS3J21kZi7EEOJFAyKCNg==}
+  next-auth-mfelfelani72@0.0.30:
+    resolution: {integrity: sha512-+xt71BXXRBC88vqkOGqv8AvcwSqfQAfDYMeFD69az6DzR/oEtEugEPE77XVw/RrBdjwm1U9wxWyo+Pk1KOVzRQ==}
 
   next-line@1.1.0:
     resolution: {integrity: sha512-+I10J3wKNoKddNxn0CNpoZ3eTZuqxjNM3b1GImVx22+ePI+Y15P8g/j3WsbP0fhzzrFzrtjOAoq5NCCucswXOQ==}
@@ -5520,18 +5486,6 @@ snapshots:
     dependencies:
       tslib: 2.8.1
 
-  '@t3-oss/env-core@0.13.11(typescript@5.9.3)(zod@4.4.3)':
-    optionalDependencies:
-      typescript: 5.9.3
-      zod: 4.4.3
-
-  '@t3-oss/env-nextjs@0.13.11(typescript@5.9.3)(zod@4.4.3)':
-    dependencies:
-      '@t3-oss/env-core': 0.13.11(typescript@5.9.3)(zod@4.4.3)
-    optionalDependencies:
-      typescript: 5.9.3
-      zod: 4.4.3
-
   '@tailwindcss/node@4.3.3':
     dependencies:
       '@jridgewell/remapping': 2.3.5
@@ -7659,9 +7613,8 @@ snapshots:
 
   neo-async@2.6.2: {}
 
-  next-auth-mfelfelani72@0.0.29(@babel/core@7.29.7(supports-color@8.1.1))(@opentelemetry/api@1.9.1)(@types/node@26.1.2)(@types/react@19.2.18)(debug@4.4.3(supports-color@8.1.1))(supports-color@8.1.1)(swr@2.5.0(react@19.2.8))(typescript@5.9.3)(use-sync-external-store@1.6.0(react@19.2.8)):
+  next-auth-mfelfelani72@0.0.30(@babel/core@7.29.7(supports-color@8.1.1))(@opentelemetry/api@1.9.1)(@types/node@26.1.2)(@types/react@19.2.18)(debug@4.4.3(supports-color@8.1.1))(supports-color@8.1.1)(swr@2.5.0(react@19.2.8))(use-sync-external-store@1.6.0(react@19.2.8)):
     dependencies:
-      '@t3-oss/env-nextjs': 0.13.11(typescript@5.9.3)(zod@4.4.3)
       axios: 1.19.0(debug@4.4.3(supports-color@8.1.1))(supports-color@8.1.1)
       clsx: 2.1.1
       cookie: 2.0.1
@@ -7683,7 +7636,6 @@ snapshots:
       - '@playwright/test'
       - '@types/node'
       - '@types/react'
-      - arktype
       - babel-plugin-macros
       - babel-plugin-react-compiler
       - debug
@@ -7691,9 +7643,7 @@ snapshots:
       - sass
       - supports-color
       - swr
-      - typescript
       - use-sync-external-store
-      - valibot
 
   next-line@1.1.0: {}
 
